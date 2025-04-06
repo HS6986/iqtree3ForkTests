@@ -1,0 +1,303 @@
+IQ-TREE 3.0.0 built Apr  6 2025
+
+Input file name: Khalturin2022.WoGaps.Subsampled.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 717436
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 30 sequences with 50 amino-acid sites
+Number of constant sites: 4 (= 8% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 4 (= 8% of all sites)
+Number of parsimony informative sites: 36
+Number of distinct site patterns: 48
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: LG+FQ+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+LG+FQ+G4          -1886.016    3888.032 - 1.94e-06   10732.032 - 3.38e-21    3998.929 +    0.824
+LG+FQ+I+G4        -1886.065    3890.130 - 6.81e-07   10970.130 - 6.71e-73    4002.939 +    0.111
+LG+FQ+R3          -1882.892    3887.784 -  2.2e-06   11451.784 - 1.72e-177    4004.417 +    0.053
+LG+FQ+I+R3        -1882.775    3889.551 - 9.09e-07   11701.551 -   1e-231    4008.096 -  0.00842
+LG+FO+G4          -1855.037    3864.074 +     0.31   15876.074 -        0    4011.299 -   0.0017
+LG+FQ+R4          -1882.625    3891.250 - 3.89e-07   11955.250 - 8.13e-287    4011.708 -  0.00138
+LG+FO+I+G4        -1855.057    3866.114 +    0.112   16190.114 -        0    4015.251 - 0.000235
+LG+FQ+I+R4        -1882.556    3893.111 - 1.53e-07   12213.111 -        0    4015.481 -  0.00021
+LG+FO+R3          -1851.749    3863.497 +    0.413   16823.497 -        0    4016.459 - 0.000129
+LG+FO+I+R3        -1851.663    3865.326 +    0.166   17149.326 -        0    4020.200 - 1.98e-05
+LG+FQ+R2          -1896.314    3910.628 - 2.41e-11   10990.628 - 2.37e-77    4023.437 - 3.93e-06
+LG+FQ+I+R2        -1894.668    3909.336 -  4.6e-11   11229.336 - 3.47e-129    4024.057 - 2.88e-06
+LG+FQ+I           -1948.561    4013.121 - 1.34e-33   10857.121 - 2.32e-48    4124.019 - 5.66e-28
+LG+FQ             -1955.879    4025.758 - 2.41e-36   10637.758 +        1    4134.744 - 2.66e-30
+GTR20+FQ+G4       -1774.970    4043.941 - 2.71e-40  126555.941 -        0    4516.211 - 3.89e-113
+GTR20+FQ+R3       -1770.083    4040.166 - 1.79e-39  129540.166 -        0    4518.172 - 1.46e-113
+GTR20+FQ+I+G4     -1774.257    4044.514 - 2.04e-40  127548.514 -        0    4518.696 - 1.12e-113
+GTR20+FQ+I+R3     -1770.052    4042.103 -  6.8e-40  130546.103 -        0    4522.021 - 2.13e-114
+GTR20+FO+G4       -1748.749    4029.497 - 3.71e-37  146073.497 -        0    4538.096 - 6.88e-118
+GTR20+FO+I+G4     -1748.747    4031.494 - 1.37e-37  147143.494 -        0    4542.005 - 9.74e-119
+GTR20+FO+R3       -1745.582    4029.164 - 4.38e-37  149289.164 -        0    4543.498 - 4.62e-119
+GTR20+FO+I+R3     -1745.563    4031.126 - 1.64e-37  150371.126 -        0    4547.373 - 6.65e-120
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+FQ+G4
+
+State frequencies: (equal frequencies)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 1.1155
+
+ Category  Relative_rate  Proportion
+  1         0.1594         0.2500
+  2         0.5089         0.2500
+  3         1.0168         0.2500
+  4         2.3149         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -1874.5907 (s.e. 150.8325)
+Unconstrained log-likelihood (without tree): -192.3053
+Number of free parameters (#branches + #model parameters): 58
+Akaike information criterion (AIC) score: 3865.1814
+Corrected Akaike information criterion (AICc) score: 10709.1814
+Bayesian information criterion (BIC) score: 3976.0787
+
+**************************** WARNING ****************************
+Number of parameters (K, model parameters and branch lengths): 58
+Sample size (n, alignment length): 50
+
+Given that K>=n, the parameter estimates might be inaccurate.
+Thus, phylogenetic estimates should be interpreted with caution.
+
+Ideally, it is desirable that n >> K. When selecting optimal models,
+1. use AIC or BIC if n > 40K;
+2. use AICc or BIC if 40K >= n > K;
+3. be extremely cautious if n <= K
+
+To improve the situation (3), consider the following options:
+  1. Increase the sample size (n)
+  2. Decrease the number of parameters (K) to be estimated. If
+     possible:
+     a. Remove the least important sequences from the alignment
+     b. Specify some of the parameter values for the substitution
+        model (e.g., the nucleotide or amino acid frequencies)
+     c. Specify some of the parameter values for the rates-across-
+        sites model (e.g., the shape parameter for the discrete
+        Gamma distribution, the proportion of invariable sites, or
+        the rates of change for different rate categories under
+        the FreeRate model)
+
+Reference:
+Burnham KR, Anderson DR (2002). Model Selection and Multimodel
+Inference: A Practical Information-Theoretic Approach. Springer,
+New York.
+************************ END OF WARNING ***********************
+
+Total tree length (sum of branch lengths): 9.2982
+Sum of internal branch lengths: 2.4412 (26.2548% of tree length)
+
+WARNING: 2 near-zero internal branches (<0.0200) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'sym' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++------------sym
+|
+|                           +----cte
+|                       +---| (78.8/79)
+|                       |   +----nvi
+|                    +--| (24.2/28)
+|                    |  |       +-------------------------------------lmi
+|                    |  +-------| (85.7/58)
+|                    |          +---------nve
+|                 +--| (83.7/30)
+|                 |  +--------mvi
+|              +**| (0/2)
+|              |  |         +----------bmo
+|              |  |     +---| (81.1/74)
+|              |  |     |   +-----------dme
+|              |  |  +--| (71.7/32)
+|              |  |  |  +---------------obi
+|              |  +--| (4.7/16)
+|              |     |      +---csp
+|              |     +------| (94.4/94)
+|              |            +---not
+|           +--| (86.7/28)
+|           |  +---------ne2
+|        +--| (42.9/33)
+|        |  +------lgi
+|     +**| (0/9)
+|     |  |     +-----------------------tca
+|     |  +-----| (80.7/80)
+|     |        +----dpu
+|  +--| (76.4/38)
+|  |  |      +-------------lox
+|  |  +------| (94.2/79)
+|  |         |  +--------bar
+|  |         +--| (78.7/81)
+|  |            +--ped
++--| (73.9/28)
+|  |        +---pfu
+|  |     +--| (86.7/91)
+|  |     |  +--cgi
+|  |  +--| (84.8/90)
+|  |  |  +-------miz
+|  +--| (88/69)
+|     |  +--------mgr
+|     +--| (77.5/54)
+|        +-----pho
+|
+|     +**lan
+|  +--| (83.8/100)
+|  |  +**lun
++--| (81.1/45)
+   |          +--------flu
+   |      +---| (83.5/86)
+   |      |   |   +--dbe
+   |      |   +---| (62.5/79)
+   |      |       +---bst
+   +------| (92.2/95)
+          |   +------bne
+          +---| (84.1/90)
+              +--mme
+
+Tree in newick format:
+
+(sym:0.3529888768,(((((((((cte:0.1386905248,nvi:0.1400181480)78.8/79:0.1105459917,(lmi:1.0005241944,nve:0.2728249019)85.7/58:0.2124461740)24.2/28:0.0466451040,mvi:0.2344312327)83.7/30:0.0705385874,(((bmo:0.2828364871,dme:0.3150490776)81.1/74:0.1269814463,obi:0.4162409118)71.7/32:0.0638200785,(csp:0.1138667514,not:0.1059084294)94.4/94:0.1943514166)4.7/16:0.0274542281)0/2:0.0000020403,ne2:0.2713068594)86.7/28:0.0624195401,lgi:0.1839787335)42.9/33:0.0606666222,(tca:0.6178764236,dpu:0.1508398397)80.7/80:0.1616758639)0/9:0.0000022168,(lox:0.3801464651,(bar:0.2396499399,ped:0.0302822269)78.7/81:0.0755855838)94.2/79:0.1916287268)76.4/38:0.0453148390,(((pfu:0.1240532465,cgi:0.0798238879)86.7/91:0.0957144341,miz:0.2207494546)84.8/90:0.0931707245,(mgr:0.2532439756,pho:0.1732645840)77.5/54:0.0670809131)88/69:0.0933774570)73.9/28:0.0417645865,((lan:0.0000010000,lun:0.0000010000)83.8/100:0.0631417354,((flu:0.2409447028,(dbe:0.0620711625,bst:0.1170964718)62.5/79:0.1181940720)83.5/86:0.1251148724,(bne:0.1987889227,mme:0.0763497204)84.1/90:0.1154403656)92.2/95:0.1913685740)81.1/45:0.0499227470);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -1874.5908703
+Robinson-Foulds distance between ML tree and consensus tree: 4
+
+Branches with support >0.0000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++------------sym
+|
+|                        +----cte
+|                    +---| (79)
+|                    |   +----nvi
+|                 +--| (28)
+|                 |  |       +-------------------------------------lmi
+|                 |  +-------| (58)
+|                 |          +---------nve
+|              +--| (30)
+|              |  +--------mvi
+|           +--| (10)
+|           |  +---------ne2
+|        +--| (28)
+|        |  |         +----------bmo
+|        |  |     +---| (74)
+|        |  |     |   +-----------dme
+|        |  |  +--| (32)
+|        |  |  |  +---------------obi
+|        |  +--| (16)
+|        |     |      +---csp
+|        |     +------| (94)
+|        |            +---not
+|     +--| (33)
+|     |  +------lgi
+|  +--| (38)
+|  |  |         +-------------lox
+|  |  |  +------| (79)
+|  |  |  |      |  +--------bar
+|  |  |  |      +--| (81)
+|  |  |  |         +--ped
+|  |  +--| (11)
+|  |     |     +-----------------------tca
+|  |     +-----| (80)
+|  |           +----dpu
++--| (28)
+|  |        +---pfu
+|  |     +--| (91)
+|  |     |  +--cgi
+|  |  +--| (90)
+|  |  |  +-------miz
+|  +--| (69)
+|     |  +--------mgr
+|     +--| (54)
+|        +-----pho
+|
+|     +--lan
+|  +--| (100)
+|  |  +--lun
++--| (45)
+   |          +--------flu
+   |      +---| (86)
+   |      |   |   +--dbe
+   |      |   +---| (79)
+   |      |       +---bst
+   +------| (95)
+          |   +------bne
+          +---| (90)
+              +--mme
+
+
+Consensus tree in newick format: 
+
+(sym:0.3531303644,((((((((cte:0.1387526866,nvi:0.1401453103)79:0.1105833552,(lmi:1.0014638993,nve:0.2729486798)58:0.2126701294)28:0.0466871248,mvi:0.2346416327)30:0.0705922346,ne2:0.2714998697)10:0.0000023268,(((bmo:0.2830709196,dme:0.3152757950)74:0.1270443167,obi:0.4166603415)32:0.0637299143,(csp:0.1139299257,not:0.1059830866)94:0.1944660676)16:0.0274780380)28:0.0624324710,lgi:0.1841036514)33:0.0606837383,((lox:0.3803218218,(bar:0.2397520691,ped:0.0302951785)81:0.0756250565)79:0.1917130028,(tca:0.6183078145,dpu:0.1509546701)80:0.1616914578)11:0.0000023268)38:0.0453244251,(((pfu:0.1240568753,cgi:0.0798734554)91:0.0957520055,miz:0.2208721970)90:0.0931712940,(mgr:0.2533655742,pho:0.1733527003)54:0.0670685912)69:0.0934280665)28:0.0417742267,((lan:0.0000022455,lun:0.0000022455)100:0.0631570041,((flu:0.2410486180,(dbe:0.0620679692,bst:0.1171454268)79:0.1182324787)86:0.1251398470,(bne:0.1988653631,mme:0.0763697672)90:0.1155077065)95:0.1913743028)45:0.0499394139);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t Khalturin2022.WoGaps.Subsampled.fasta.treefile -m "LG+FQ+G4{1.11549}" --length 50
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s Khalturin2022.WoGaps.Subsampled.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s Khalturin2022.WoGaps.Subsampled.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Apr  6 14:23:09 2025
+Total CPU time used: 613.189807 seconds (0h:10m:13s)
+Total wall-clock time used: 311.5055315 seconds (0h:5m:11s)
+

@@ -1,0 +1,294 @@
+IQ-TREE 3.0.0 built Apr  6 2025
+
+Input file name: Chen2024.COI.Aligned.NT.Replaced.Subsampled.fas
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 754099
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 19 sequences with 17 codon sites
+Number of constant sites: 1 (= 5.88235% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1 (= 5.88235% of all sites)
+Number of parsimony informative sites: 13
+Number of distinct site patterns: 17
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: MG+F1X4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+MG+F1X4            -447.206     972.412 -    0.023    4092.412 - 4.78e-99    1004.907 +    0.138
+MG+F3X4            -438.741     967.481 +     0.27    5107.481 - 1.82e-319    1004.976 +    0.133
+MGK+F1X4           -446.146     972.293 -   0.0244    4252.293 - 9.16e-134    1005.622 +   0.0966
+MG+FQ              -451.815     975.631 -   0.0046    3639.631 +        1    1005.627 +   0.0963
+GY+FQ              -450.825     975.650 -  0.00455    3787.650 - 7.21e-33    1006.479 +   0.0629
+MG+F3X4+G4         -438.399     968.798 +     0.14    5292.798 -        0    1007.126 -   0.0455
+MG+F1X4+G4         -447.169     974.338 -  0.00877    4254.338 - 3.3e-134    1007.667 -   0.0347
+MG+F1X4+I          -447.202     974.405 -  0.00849    4254.405 - 3.19e-134    1007.733 -   0.0336
+MG+F3X4+I          -438.738     969.475 +   0.0998    5293.475 -        0    1007.803 -   0.0324
+MGK+F3X4           -438.759     969.519 +   0.0977    5293.519 -        0    1007.846 -   0.0317
+MG+FQ+G4           -451.625     977.249 -  0.00205    3789.249 - 3.24e-33    1008.078 -   0.0283
+MGK+F1X4+G4        -446.092     974.184 -  0.00948    4418.184 - 8.7e-170    1008.345 -   0.0247
+MGK+F1X4+I         -446.130     974.260 -  0.00912    4418.260 - 8.37e-170    1008.422 -   0.0238
+MG+FQ+I            -451.812     977.625 -   0.0017    3789.625 - 2.69e-33    1008.454 -   0.0234
+GY+FQ+G4           -450.422     976.845 -  0.00251    3940.845 - 3.91e-66    1008.507 -   0.0228
+MGK+FQ             -451.990     977.980 -  0.00142    3789.980 - 2.25e-33    1008.809 -   0.0196
+GY+FQ+I            -450.796     977.592 -  0.00172    3941.592 - 2.69e-66    1009.254 -   0.0157
+MG+F3X4+I+G4       -438.396     970.792 +   0.0517    5482.792 -        0    1009.953 -   0.0111
+MGK+F3X4+G4        -438.421     970.843 +   0.0504    5482.843 -        0    1010.004 -   0.0108
+MG+F3X4+R2         -438.428     970.856 +     0.05    5482.856 -        0    1010.017 -   0.0107
+MG+F1X4+R2         -447.162     976.324 -  0.00325    4420.324 - 2.98e-170    1010.486 -  0.00848
+MG+F1X4+I+G4       -447.170     976.340 -  0.00322    4420.340 - 2.96e-170    1010.502 -  0.00841
+MGK+FQ+G4          -451.454     978.909 - 0.000893    3942.909 - 1.39e-66    1010.571 -  0.00813
+MGK+F3X4+I         -438.758     971.516 -    0.036    5483.516 -        0    1010.677 -  0.00771
+MG+FQ+R2           -451.507     979.015 - 0.000846    3943.015 - 1.32e-66    1010.677 -  0.00771
+MG+FQ+I+G4         -451.627     979.255 - 0.000751    3943.255 - 1.17e-66    1010.917 -  0.00684
+GY+FQ+R2           -450.256     978.512 -  0.00109    4098.512 - 2.27e-100    1011.008 -  0.00653
+MGK+F1X4+R2        -446.085     976.171 -  0.00351    4588.171 - 1.06e-206    1011.166 -  0.00604
+MGK+F1X4+I+G4      -446.092     976.184 -  0.00349    4588.184 - 1.06e-206    1011.179 -    0.006
+GY+FQ+I+G4         -450.380     978.759 - 0.000962    4098.759 -   2e-100    1011.255 -  0.00578
+MGK+FQ+I           -451.953     979.906 - 0.000542    3943.906 - 8.46e-67    1011.568 -  0.00494
+MGK+FQ+R2          -450.963     979.925 - 0.000537    4099.925 - 1.12e-100    1012.421 -  0.00322
+MG+F3X4+I+R2       -438.330     972.659 -   0.0203    5676.659 -        0    1012.653 -  0.00287
+MGK+F3X4+I+G4      -438.419     972.838 -   0.0186    5676.838 -        0    1012.832 -  0.00262
+MGK+F3X4+R2        -438.446     972.892 -   0.0181    5676.892 -        0    1012.887 -  0.00255
+MG+F1X4+I+R2       -447.168     978.337 -  0.00119    4590.337 - 3.6e-207    1013.332 -  0.00204
+MGK+FQ+I+G4        -451.453     980.905 - 0.000329    4100.905 - 6.85e-101    1013.400 -  0.00198
+MG+FQ+I+R2         -451.502     981.004 - 0.000313    4101.004 - 6.52e-101    1013.499 -  0.00188
+GY+FQ+I+R2         -450.111     980.221 - 0.000463    4260.221 - 1.74e-135    1013.550 -  0.00183
+MGK+F1X4+I+R2      -446.101     978.202 -  0.00127    4762.202 - 1.72e-244    1014.030 -  0.00144
+MGK+FQ+I+R2        -450.657     981.314 - 0.000268    4261.314 - 1.01e-135    1014.642 -  0.00106
+MGK+F3X4+I+R2      -438.336     974.671 -  0.00743    5874.671 -        0    1015.499 - 0.000692
+GY+F1X4            -451.120     982.240 - 0.000169    4262.240 - 6.34e-136    1015.568 - 0.000668
+MG+F3X4+R3         -438.384     974.769 -  0.00707    5874.769 -        0    1015.596 - 0.000659
+GY+FQ+R3           -449.967     981.934 - 0.000197    4425.934 - 1.81e-171    1016.095 - 0.000513
+MG+F1X4+R3         -447.155     980.310 - 0.000443    4764.310 - 6.01e-245    1016.138 - 0.000502
+MG+FQ+R3           -451.494     982.989 - 0.000116    4262.989 - 4.36e-136    1016.318 - 0.000459
+GY+F1X4+G4         -450.121     982.241 - 0.000169    4426.241 - 1.55e-171    1016.403 -  0.00044
+MGK+F1X4+R3        -446.080     980.159 - 0.000478    4940.159 - 3.92e-283    1016.821 - 0.000357
+MGK+FQ+R3          -450.757     983.515 - 8.92e-05    4427.515 - 8.19e-172    1017.677 - 0.000233
+GY+F3X4            -443.914     979.828 - 0.000564    5303.828 -        0    1018.156 - 0.000183
+GY+F1X4+I          -451.118     984.235 - 6.22e-05    4428.235 - 5.71e-172    1018.397 - 0.000162
+MGK+F3X4+R3        -438.397     976.793 -  0.00257    6076.793 -        0    1018.454 - 0.000158
+GY+F3X4+R2         -441.386     978.772 - 0.000956    5682.772 -        0    1018.766 - 0.000135
+GY+F1X4+R2         -449.937     983.873 - 7.46e-05    4595.873 - 2.26e-208    1018.868 - 0.000128
+GY+FQ+I+R3         -449.961     983.921 - 7.28e-05    4595.921 - 2.21e-208    1018.916 - 0.000125
+GY+F1X4+I+G4       -450.115     984.230 - 6.24e-05    4596.230 - 1.89e-208    1019.225 - 0.000107
+GY+F3X4+I+R2       -440.486     978.971 - 0.000865    5878.971 -        0    1019.799 - 8.06e-05
+GY+F3X4+G4         -443.348     980.696 - 0.000365    5492.696 -        0    1019.857 - 7.83e-05
+GY+F3X4+I          -443.904     981.809 - 0.000209    5493.809 -        0    1020.970 - 4.49e-05
+GY+F1X4+I+R2       -449.911     985.821 - 2.82e-05    4769.821 - 3.82e-246    1021.649 - 3.19e-05
+GY+F3X4+I+G4       -443.346     982.693 - 0.000135    5686.693 -        0    1022.687 -  1.9e-05
+GY+F3X4+R3         -440.766     981.532 -  0.00024    6081.532 -        0    1023.193 - 1.48e-05
+GY+F1X4+R3         -449.915     987.829 - 1.03e-05    4947.829 - 8.48e-285    1024.491 - 7.72e-06
+GY+F+I+R2          -413.435    1028.869 - 1.26e-14   21632.869 -        0    1113.024 -  4.6e-25
+GY+F+R2            -416.915    1033.829 - 1.06e-15   21233.829 -        0    1117.151 - 5.84e-26
+GY+F+G4            -418.570    1035.141 -  5.5e-16   20835.141 -        0    1117.629 -  4.6e-26
+GY+F+R3            -414.367    1032.734 - 1.83e-15   22044.734 -        0    1117.721 - 4.39e-26
+GY+F               -420.780    1037.561 - 1.64e-16   20441.561 -        0    1119.216 - 2.08e-26
+GY+F+I+G4          -418.565    1037.130 - 2.03e-16   21237.130 -        0    1120.451 - 1.12e-26
+GY+F+I             -420.733    1039.466 - 6.32e-17   20839.466 -        0    1121.954 - 5.29e-27
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: MG+F1X4
+
+Nonsynonymous/synonymous ratio (omega): 0.0147
+Transition/transversion ratio (kappa): 1.0587
+Model of rate heterogeneity: Uniform
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -426.3013 (s.e. 38.2586)
+Unconstrained log-likelihood (without tree): -48.1646
+Number of free parameters (#branches + #model parameters): 39
+Akaike information criterion (AIC) score: 930.6026
+Corrected Akaike information criterion (AICc) score: 4050.6026
+Bayesian information criterion (BIC) score: 963.0979
+
+**************************** WARNING ****************************
+Number of parameters (K, model parameters and branch lengths): 39
+Sample size (n, alignment length): 17
+
+Given that K>=n, the parameter estimates might be inaccurate.
+Thus, phylogenetic estimates should be interpreted with caution.
+
+Ideally, it is desirable that n >> K. When selecting optimal models,
+1. use AIC or BIC if n > 40K;
+2. use AICc or BIC if 40K >= n > K;
+3. be extremely cautious if n <= K
+
+To improve the situation (3), consider the following options:
+  1. Increase the sample size (n)
+  2. Decrease the number of parameters (K) to be estimated. If
+     possible:
+     a. Remove the least important sequences from the alignment
+     b. Specify some of the parameter values for the substitution
+        model (e.g., the nucleotide or amino acid frequencies)
+     c. Specify some of the parameter values for the rates-across-
+        sites model (e.g., the shape parameter for the discrete
+        Gamma distribution, the proportion of invariable sites, or
+        the rates of change for different rate categories under
+        the FreeRate model)
+
+Reference:
+Burnham KR, Anderson DR (2002). Model Selection and Multimodel
+Inference: A Practical Information-Theoretic Approach. Springer,
+New York.
+************************ END OF WARNING ***********************
+
+Total tree length (sum of branch lengths): 34.5288
+Sum of internal branch lengths: 12.0428 (34.8776% of tree length)
+
+WARNING: 4 near-zero internal branches (<0.0588) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+WARNING: 1 too long branches (>9.8000) should be treated with caution!
+NOTE: Tree is UNROOTED although outgroup taxon 'Spathoderma_clenchi' is drawn at root
+
+NOTE: Branch lengths are interpreted as number of nucleotide substitutions per codon site!
+      Rescale them by 1/3 if you want to have #nt substitutions per nt site
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++---------Spathoderma_clenchi
+|
++-------------Claviderma_amplum
+|
+|                                                     +-----------------Alexandromenia_crassa
+|                                                  +--| (76.1/47)
+|                                                  |  +--Falcidens_sagittiferus
+|                                               +--| (23.6/34)
+|                                               |  +--Falcidens_acutargatus
+|                                            +--| (85.2/38)
+|                                            |  |     +**Falcidens_crossotus
+|                                            |  |  +**| (0/33)
+|                                            |  |  |  |  +**Chaetoderma_majusculum
+|                                            |  |  |  +--| (81.9/53)
+|                                            |  |  |     +--Psilodens_balduri
+|                                            |  +--| (66.1/55)
+|                                            |     +--Scutopus_ventrolineatus
+|                                         +--| (66.1/25)
+|                                         |  |  +**Chaetoderma_sp
+|                                         |  +--| (72.2/100)
+|                                         |     +**Chaetoderma_shenloong
+|                                      +--| (88.1/59)
+|                                      |  |        +------------Neomenia_carinata
+|                                      |  |     +--| (13.4/42)
+|                                      |  |     |  |  +**Falcidens_caudatus
+|                                      |  |     |  +**| (0/36)
+|                                      |  |     |     |  +--Chaetoderma_nitidulum
+|                                      |  |     |     +--| (70.7/82)
+|                                      |  |     |        +**Falcidens_halanychi
+|                                      |  |  +**| (0/18)
+|                                      |  |  |  +--Scutopus_robustus
+|                                      |  +--| (74.9/35)
+|                                      |     +--Chaetoderma_felderi
+|                                   +**| (0/61)
+|                                   |  +**Chaetoderma_japonicum
++-----------------------------------| (99.5/99)
+                                    +----------Wirenia_argentea
+
+Tree in newick format:
+
+(Spathoderma_clenchi:2.9715223696,Claviderma_amplum:3.8715901491,(((((((Alexandromenia_crassa:5.1053218607,Falcidens_sagittiferus:0.4024730867)76.1/47:0.4018765748,Falcidens_acutargatus:0.1125400989)23.6/34:0.1918581426,((Falcidens_crossotus:0.0000023657,(Chaetoderma_majusculum:0.0000028338,Psilodens_balduri:0.6498485129)81.9/53:0.0615204450)0/33:0.0000021949,Scutopus_ventrolineatus:0.4920472083)66.1/55:0.0921834134)85.2/38:0.2569348518,(Chaetoderma_sp:0.0000010000,Chaetoderma_shenloong:0.0000010000)72.2/100:0.1458612862)66.1/25:0.0896621377,(((Neomenia_carinata:3.7117304084,(Falcidens_caudatus:0.0000022175,(Chaetoderma_nitidulum:1.0638786099,Falcidens_halanychi:0.0000029323)70.7/82:0.4614011891)0/36:0.0000029045)13.4/42:0.1020501483,Scutopus_robustus:0.3728820330)0/18:0.0267676567,Chaetoderma_felderi:0.3417280295)74.9/35:0.1304730210)88.1/59:0.2280663997,Chaetoderma_japonicum:0.0000028655)0/61:0.0000020386,Wirenia_argentea:3.2445408602)99.5/99:9.9999987370);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -426.3021008
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.0000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++---------Spathoderma_clenchi
+|
++-------------Claviderma_amplum
+|
+|                                                     +-----------------Alexandromenia_crassa
+|                                                  +--| (47)
+|                                                  |  +--Falcidens_sagittiferus
+|                                               +--| (34)
+|                                               |  +--Falcidens_acutargatus
+|                                            +--| (38)
+|                                            |  |     +--Falcidens_crossotus
+|                                            |  |  +--| (33)
+|                                            |  |  |  |  +--Chaetoderma_majusculum
+|                                            |  |  |  +--| (53)
+|                                            |  |  |     +--Psilodens_balduri
+|                                            |  +--| (55)
+|                                            |     +--Scutopus_ventrolineatus
+|                                         +--| (25)
+|                                         |  |  +--Chaetoderma_sp
+|                                         |  +--| (100)
+|                                         |     +--Chaetoderma_shenloong
+|                                      +--| (59)
+|                                      |  |        +------------Neomenia_carinata
+|                                      |  |     +--| (42)
+|                                      |  |     |  |  +--Falcidens_caudatus
+|                                      |  |     |  +--| (36)
+|                                      |  |     |     |  +--Chaetoderma_nitidulum
+|                                      |  |     |     +--| (82)
+|                                      |  |     |        +--Falcidens_halanychi
+|                                      |  |  +--| (18)
+|                                      |  |  |  +--Scutopus_robustus
+|                                      |  +--| (35)
+|                                      |     +--Chaetoderma_felderi
+|                                   +--| (61)
+|                                   |  +--Chaetoderma_japonicum
++-----------------------------------| (99)
+                                    +----------Wirenia_argentea
+
+
+Consensus tree in newick format: 
+
+(Spathoderma_clenchi:2.9730039145,Claviderma_amplum:3.8710308696,(((((((Alexandromenia_crassa:5.1061419762,Falcidens_sagittiferus:0.4006993273)47:0.4011991715,Falcidens_acutargatus:0.1220830826)34:0.1786029875,((Falcidens_crossotus:0.0000028511,(Chaetoderma_majusculum:0.0000028511,Psilodens_balduri:0.6498494544)53:0.0614773682)33:0.0000028511,Scutopus_ventrolineatus:0.4920839089)55:0.0936741879)38:0.2550806396,(Chaetoderma_sp:0.0000028511,Chaetoderma_shenloong:0.0000028511)100:0.1465913853)25:0.0894959038,(((Neomenia_carinata:3.7118376829,(Falcidens_caudatus:0.0000028511,(Chaetoderma_nitidulum:1.0638801650,Falcidens_halanychi:0.0000020388)82:0.4611341938)36:0.0000023239)42:0.1025850819,Scutopus_robustus:0.3729302742)18:0.0260566413,Chaetoderma_felderi:0.3425782122)35:0.1309756342)59:0.2273039541,Chaetoderma_japonicum:0.0000020261)61:0.0000027433,Wirenia_argentea:3.2445407441)99:9.9999984914);
+
+ALISIM COMMAND
+--------------
+Currently, we only support exporting AliSim commands automatically from the analysis for common models of DNA, Protein, Binary, Multistate, and Morphological data. To simulate data from other models (mixture, lie-markov, etc), please refer to the User Manual of AliSim. Thanks!
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Apr  6 14:29:22 2025
+Total CPU time used: 377.080857 seconds (0h:6m:17s)
+Total wall-clock time used: 268.5771158 seconds (0h:4m:28s)
+
