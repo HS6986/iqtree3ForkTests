@@ -1,5 +1,5 @@
 # iqtree3ForkTests
-This repository contains tests of [my IQ-TREE 3 branch](https://github.com/HS6986/iqtree3Fork/tree/feature/HS6986/extend-MixtureFinder) whose MixtureFinder ([Ren et al., 2024](https://doi.org/10.1093/molbev/msae264)) was extended to codon, binary, multistate, and amino acid data. See PR?? for the details.
+This repository contains tests of [my IQ-TREE 3 branch](https://github.com/HS6986/iqtree3Fork/tree/feature/HS6986/extend-MixtureFinder) whose MixtureFinder ([Ren et al., 2024](https://doi.org/10.1093/molbev/msae264)) was extended to codon, binary, multistate, and amino acid data. See [the pull request](https://github.com/iqtree/iqtree3/pull/11) for details.
 
 ## Files
 - Yamasaki2015.18S28S.Subsampled.fas: A subsample of the dataset of [Yamasaki et al. (2015)](https://doi.org/10.1186/s40851-015-0017-0) consisting of 18S and 28S rRNA sequences. It was used for the test of the DNA MixtureFinder.
