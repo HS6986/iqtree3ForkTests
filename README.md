@@ -6,7 +6,8 @@ This repository contains tests of [my IQ-TREE 3 branch](https://github.com/HS698
 - Yamasaki2015.18S28S.RY.Subsampled.fas: An RY recoded (e.g., [Braun & Kimball, 2021](https://doi.org/10.3390/birds2010001)) subsample of the dataset of [Yamasaki et al. (2015)](https://doi.org/10.1186/s40851-015-0017-0) consisting of 18S and 28S rRNA sequences. It was used for the test of the binary MixtureFinder.
 - Khalturin2022.WoGaps.Subsampled.fasta: A subsample of the gapless phylogenomic dataset of [Khalturin et al. (2022)](https://doi.org/10.1126/sciadv.abo4400). It was used for the test of the amino acid MixtureFinder.
 - Khalturin2022.WoGaps.recSR4.Subsampled.fasta: An SR4 ([Susko & Roger, 2007](https://doi.org/10.1093/molbev/msm144)) recoded subsample of the gapless phylogenomic dataset of [Khalturin et al. (2022)](https://doi.org/10.1126/sciadv.abo4400). It was used for the tests of the multistate MixtureFinder and my branch's behavior for multistate datasets.
-- Chen2024.COI.Aligned.NT.Replaced.Subsampled.fas: A subsample of the untrimmed COI dataset of [Chen et al. (2024)](https://doi.org/10.3897/zse.100.125409). The dataset was re-aligned by MACSE v2.07 ([Ranwez et al., 2018](https://doi.org/10.1093/molbev/msy159)) to account for the codon structure. The dataset was used for the test of the codon MixtureFinder.
+- Sorensen2006.H3.Aligned.NT.Subsampled.fas; A subsample of the histone H3 alignment of [Sørensen et al. (2006)](https://doi.org/10.1111/j.1096-0031.2006.00085.x). The dataset was aligned by MACSE v2.07 ([Ranwez et al., 2018](https://doi.org/10.1093/molbev/msy159)) to account for the codon structure. The dataset was used for the test of the codon MixtureFinder.  
+**Failed with an error message `Frequency mixture name not found U`**
 
 ## Folders
 - MixtureFinder: Tests of MixtureFinder for various data types.
