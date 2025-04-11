@@ -7,7 +7,7 @@ This repository contains tests of [my IQ-TREE 3 branch](https://github.com/HS698
 - Khalturin2022.WoGaps.Subsampled.fasta: A subsample of the gapless phylogenomic dataset of [Khalturin et al. (2022)](https://doi.org/10.1126/sciadv.abo4400). It was used for the test of the amino acid MixtureFinder.
 - Khalturin2022.WoGaps.recSR4.Subsampled.fasta: An SR4 ([Susko & Roger, 2007](https://doi.org/10.1093/molbev/msm144)) recoded subsample of the gapless phylogenomic dataset of [Khalturin et al. (2022)](https://doi.org/10.1126/sciadv.abo4400). It was used for the tests of the multistate MixtureFinder and my branch's behavior for multistate datasets.
 - Sorensen2006.H3.Aligned.NT.Subsampled.fas; A subsample of the histone H3 alignment of [Sørensen et al. (2006)](https://doi.org/10.1111/j.1096-0031.2006.00085.x). The dataset was aligned by MACSE v2.07 ([Ranwez et al., 2018](https://doi.org/10.1093/molbev/msy159)) to account for the codon structure. The dataset was used for the test of the codon MixtureFinder.  
-**Failed with an error message `Frequency mixture name not found U`**
+**This test failed with an error message `Frequency mixture name not found U`.**
 
 ## Folders
 - MixtureFinder: Tests of MixtureFinder for various data types.
