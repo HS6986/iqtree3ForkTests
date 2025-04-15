@@ -1,18 +1,18 @@
-IQ-TREE version 3.0.0 for Linux x86 64-bit built Apr  8 2025
+IQ-TREE version 3.0.0 for Linux x86 64-bit built Apr 15 2025
 Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
 Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
 Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
 
 Host:    Hiroaki (AVX2, FMA3, 15 GB RAM)
 Command: ../../iqtree3ForkBuild/build/iqtree3 -s Sorensen2006.H3.Aligned.NT.Subsampled.fas -st CODON -m MIX+MFP -mrate-twice 1 -B 1000 -bnni -alrt 1000 -T AUTO --redo
-Seed:    626737 (Using SPRNG - Scalable Parallel Random Number Generator)
-Time:    Fri Apr 11 15:45:20 2025
+Seed:    945724 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Apr 15 12:57:51 2025
 Kernel:  AVX+FMA - auto-detect threads (8 CPU cores detected)
 
 Reading alignment file Sorensen2006.H3.Aligned.NT.Subsampled.fas ... Fasta format detected
 Warning: Line 22: '!' was found in the alignment, which will be interpreted as a gap
 Warning: Line 24: '!' was found in the alignment, which will be interpreted as a gap
-Reading fasta file: done in 0.00117531 secs using 5.616% CPU
+Reading fasta file: done in 0.00249141 secs using 13.77% CPU
 Alignment most likely contains DNA/RNA sequences
 Converting to codon sequences with genetic code  ...
 WARNING: Sequence Tenuignathia_rikerae_DQ079989 has ambiguous character !CT at site 10
@@ -20,11 +20,11 @@ WARNING: Sequence Rastrognathia_macrostoma_DQ079988 has ambiguous character ACY 
 WARNING: Sequence Labidognathia_longicollis_AY218157 has ambiguous character AAR at site 19
 WARNING: Sequence Haplognathia_gubbarnorum_DQ079983 has ambiguous character !!G at site 25
 WARNING: Sequence Labidognathia_longicollis_AY218157 has ambiguous character GCN at site 49
-Constructing alignment: done in 0.00143614 secs using 24.93% CPU
+Constructing alignment: done in 0.00250461 secs using 653.3% CPU
 Alignment has 16 sequences with 17 columns, 17 distinct patterns
 16 parsimony-informative, 1 singleton sites, 0 constant sites
                                      Gap/Ambiguity  Composition  p-value
-Analyzing sequences: done in 2.7914e-05 secs using 89.56% CPU
+Analyzing sequences: done in 2.9609e-05 secs using 87.81% CPU
    1  Austrognathia_christianae_DQ079978     0.00%    passed     99.82%
    2  Austrognathia_sp__MVS_2005_DQ079979    0.00%    passed     96.45%
    3  Valvognathia_pogonostoma_DQ079990      0.00%    passed    100.00%
@@ -43,102 +43,2404 @@ Analyzing sequences: done in 2.7914e-05 secs using 89.56% CPU
   16  Haplognathia_simplex_DQ079985         11.76%    passed    100.00%
 WARNING: 1 sequences contain more than 50% gaps/ambiguity
 ****  TOTAL                                  6.62%  0 sequences failed composition chi2 test (p-value<5%; df=60)
-Checking for duplicate sequences: done in 0.000209709 secs using 71.53% CPU
+Checking for duplicate sequences: done in 0.000176 secs using 85.8% CPU
 --------------------------------------------------------------------
 |                Optimizing Q-mixture model                        |
 --------------------------------------------------------------------
 
 Creating fast initial parsimony tree by random order stepwise addition...
-0.022 seconds, parsimony score: 73 (based on 17 sites)
+0.012 seconds, parsimony score: 75 (based on 17 sites)
 Measuring multi-threading efficiency up to 8 CPU cores
 Increase to 10 rounds for branch lengths
-102 trees examined
-Threads: 1 / Time: 8.037 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -515
-Threads: 2 / Time: 7.023 sec / Speedup: 1.144 / Efficiency: 57% / LogL: -515
+118 trees examined
+Threads: 1 / Time: 8.048 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -537
+Threads: 2 / Time: 7.450 sec / Speedup: 1.080 / Efficiency: 54% / LogL: -537
 WARNING: 3 threads for alignment length 17 will slow down analysis
-Threads: 3 / Time: 8.394 sec / Speedup: 0.957 / Efficiency: 32% / LogL: -515
-Determining AUTO threadcount: done in 23.4563 secs using 157.5% CPU
+Threads: 3 / Time: 7.161 sec / Speedup: 1.124 / Efficiency: 37% / LogL: -537
+Determining AUTO threadcount: done in 22.6607 secs using 163.3% CPU
 BEST NUMBER OF THREADS: 2
 
 Perform fast likelihood tree search using GY+F3X4+G model...
 Estimate model parameters (epsilon = 5.000)
 Perform nearest neighbor interchange...
-Optimizing NNI: done in 1.02054 secs using 199.6% CPU
+Optimizing NNI: done in 0.177176 secs using 209.2% CPU
 Estimate model parameters (epsilon = 1.000)
-1. Initial log-likelihood: -348.053
-2. Current log-likelihood: -346.868
-Optimal log-likelihood: -346.867
-Nonsynonymous/synonymous ratio (omega): 0.014
-Transition/transversion ratio (kappa): 0.907
-Gamma shape alpha: 1.427
-Parameters optimization took 2 rounds (0.675 sec)
-Time for fast ML tree search: 2.818 seconds
+1. Initial log-likelihood: -394.233
+2. Current log-likelihood: -389.902
+3. Current log-likelihood: -384.478
+4. Current log-likelihood: -376.896
+5. Current log-likelihood: -363.283
+Optimal log-likelihood: -363.281
+Nonsynonymous/synonymous ratio (omega): 0.021
+Transition/transversion ratio (kappa): 1.245
+Gamma shape alpha: 1.583
+Parameters optimization took 5 rounds (2.231 sec)
+Time for fast ML tree search: 3.412 seconds
 
 NOTE: ModelFinder requires 6 MB RAM!
 ModelFinder will test up to 132 codon models (sample size: 17 epsilon: 0.100) ...
  No. Model         -LnL         df  AIC          AICc         BIC
-  1  GY+F1X4       347.487      34  762.973      3142.973     791.302
-  2  GY+F1X4+G4    344.293      35  758.585      3278.585     787.748
-  3  GY+F1X4+R2    344.225      36  760.451      3424.451     790.446
-  4  GY+F1X4+R3    343.820      38  763.641      3727.641     795.303
- 12  GY+F3X4       350.041      40  780.081      4060.081     813.410
- 13  GY+F3X4+G4    344.081      41  770.163      4214.163     804.324
- 14  GY+F3X4+R2    345.050      42  774.100      4386.100     809.095
- 15  GY+F3X4+R3    340.594      44  769.188      4729.188     805.849
- 23  MGK+F1X4      342.977      34  753.954      3133.954     782.283
- 24  MGK+F1X4+G4   342.062      35  754.124      3274.124     783.286
- 25  MGK+F1X4+R2   340.474      36  752.949      3416.949     782.944
- 26  MGK+F1X4+R3   340.471      38  756.941      3720.941     788.604
- 34  MGK+F3X4      337.861      40  755.721      4035.721     789.050
- 35  MGK+F3X4+G4   337.258      41  756.517      4200.517     790.678
- 36  MGK+F3X4+R2   336.335      42  756.669      4368.669     791.664
- 37  MGK+F3X4+R3   333.539      44  755.078      4715.078     791.740
- 45  MG+F1X4       343.038      33  752.077      2996.077     779.573
- 46  MG+F1X4+G4    342.081      34  752.163      3132.163     780.492
- 47  MG+F1X4+R2    340.550      35  751.099      3271.099     780.262
- 48  MG+F1X4+R3    340.363      37  754.726      3566.726     785.555
- 56  MG+F3X4       337.881      39  753.763      3873.763     786.258
- 57  MG+F3X4+G4    337.259      40  754.518      4034.518     787.846
- 58  MG+F3X4+R2    336.336      41  754.672      4198.672     788.834
- 59  MG+F3X4+R3    333.465      43  752.930      4536.930     788.759
- 67  KOSI07+FU     330.816      29  719.631      2459.631     743.794
- 68  KOSI07+FU+G4  330.457      30  720.915      2580.915     745.911
- 69  KOSI07+FU+R2  329.679      31  721.358      2705.358     747.187
- 70  KOSI07+FU+R3  329.512      33  725.024      2969.024     752.520
- 78  KOSI07+F1X4   342.494      32  748.988      2860.988     775.651
- 79  KOSI07+F1X4+G4 339.011      33  744.022      2988.022     771.518
- 80  KOSI07+F1X4+R2 338.423      34  744.845      3124.845     773.174
- 81  KOSI07+F1X4+R3 337.153      36  746.307      3410.307     776.302
- 89  KOSI07+F3X4   343.619      38  763.239      3727.239     794.901
- 90  KOSI07+F3X4+G4 338.771      39  755.543      3875.543     788.038
- 91  KOSI07+F3X4+R2 338.557      40  757.114      4037.114     790.443
- 92  KOSI07+F3X4+R3 337.588      42  759.175      4371.175     794.170
-100  SCHN05+FU     334.608      29  727.215      2467.215     751.378
-101  SCHN05+FU+G4  334.213      30  728.426      2588.426     753.422
-102  SCHN05+FU+R2  333.518      31  729.036      2713.036     754.865
-103  SCHN05+FU+R3  333.476      33  732.953      2976.953     760.449
-111  SCHN05+F1X4   344.346      32  752.693      2864.693     779.356
-112  SCHN05+F1X4+G4 339.598      33  745.196      2989.196     772.692
-113  SCHN05+F1X4+R2 338.927      34  745.855      3125.855     774.184
-114  SCHN05+F1X4+R3 338.007      36  748.013      3412.013     778.009
-122  SCHN05+F3X4   344.603      38  765.205      3729.205     796.867
-123  SCHN05+F3X4+G4 338.912      39  755.825      3875.825     788.320
-124  SCHN05+F3X4+R2 339.353      40  758.707      4038.707     792.035
-125  SCHN05+F3X4+R3 336.157      42  756.314      4368.314     791.309
+  1  GY+F1X4       360.375      34  788.750      3168.750     817.080
+  2  GY+F1X4+G4    357.982      35  785.965      3305.965     815.127
+  3  GY+F1X4+R2    358.045      36  788.091      3452.091     818.086
+  4  GY+F1X4+R3    357.406      38  790.813      3754.813     822.475
+ 12  GY+F3X4       362.317      40  804.634      4084.634     837.962
+ 13  GY+F3X4+G4    357.726      41  797.452      4241.452     831.614
+ 14  GY+F3X4+R2    353.503      42  791.005      4403.005     826.000
+ 15  GY+F3X4+R3    350.221      44  788.442      4748.442     825.104
+ 23  MGK+F1X4      354.096      34  776.192      3156.192     804.522
+ 24  MGK+F1X4+G4   353.260      35  776.520      3296.520     805.683
+ 25  MGK+F1X4+R2   354.164      36  780.329      3444.329     810.324
+ 26  MGK+F1X4+R3   346.509      38  769.018      3733.018     800.680
+ 34  MGK+F3X4      349.380      40  778.760      4058.760     812.088
+ 35  MGK+F3X4+G4   348.395      41  778.790      4222.790     812.952
+ 36  MGK+F3X4+R2   343.388      42  770.776      4382.776     805.771
+ 37  MGK+F3X4+R3   341.002      44  770.005      4730.005     806.666
+ 45  MG+F1X4       355.133      33  776.266      3020.266     803.762
+ 46  MG+F1X4+G4    352.915      34  773.830      3153.830     802.159
+ 47  MG+F1X4+R2    351.250      35  772.499      3292.499     801.662
+ 48  MG+F1X4+R3    346.794      37  767.587      3579.587     798.416
+ 56  MG+F3X4       349.397      39  776.795      3896.795     809.290
+ 57  MG+F3X4+G4    348.411      40  776.823      4056.823     810.151
+ 58  MG+F3X4+R2    343.595      41  769.190      4213.190     803.351
+ 59  MG+F3X4+R3    340.988      43  767.976      4551.976     803.804
+ 67  KOSI07+FU     327.759      29  713.518      2453.518     737.681
+ 68  KOSI07+FU+G4  327.047      30  714.093      2574.093     739.089
+ 69  KOSI07+FU+R2  326.150      31  714.300      2698.300     740.130
+ 70  KOSI07+FU+R3  325.579      33  717.157      2961.157     744.653
+ 78  KOSI07+F1X4   340.449      32  744.899      2856.899     771.562
+ 79  KOSI07+F1X4+G4 336.408      33  738.816      2982.816     766.312
+ 80  KOSI07+F1X4+R2 334.659      34  737.318      3117.318     765.648
+ 81  KOSI07+F1X4+R3 334.397      36  740.795      3404.795     770.790
+ 89  KOSI07+F3X4   338.943      38  753.886      3717.886     785.549
+ 90  KOSI07+F3X4+G4 335.710      39  749.421      3869.421     781.916
+ 91  KOSI07+F3X4+R2 335.635      40  751.270      4031.270     784.598
+ 92  KOSI07+F3X4+R3 334.755      42  753.511      4365.511     788.506
+100  SCHN05+FU     334.312      29  726.623      2466.623     750.786
+101  SCHN05+FU+G4  334.142      30  728.283      2588.283     753.279
+102  SCHN05+FU+R2  334.018      31  730.036      2714.036     755.866
+103  SCHN05+FU+R3  333.891      33  733.782      2977.782     761.278
+111  SCHN05+F1X4   346.684      32  757.367      2869.367     784.030
+112  SCHN05+F1X4+G4 341.601      33  749.202      2993.202     776.698
+113  SCHN05+F1X4+R2 341.083      34  750.166      3130.166     778.495
+114  SCHN05+F1X4+R3 339.378      36  750.757      3414.757     780.752
+122  SCHN05+F3X4   344.364      38  764.728      3728.728     796.390
+123  SCHN05+F3X4+G4 340.878      39  759.755      3879.755     792.250
+124  SCHN05+F3X4+R2 341.350      40  762.701      4042.701     796.029
+125  SCHN05+F3X4+R3 336.043      42  756.086      4368.086     791.081
 Akaike Information Criterion:           KOSI07+FU
 Corrected Akaike Information Criterion: KOSI07+FU
 Bayesian Information Criterion:         KOSI07+FU
 Best-fit model: KOSI07+FU chosen according to BIC
 
 All model information printed to Sorensen2006.H3.Aligned.NT.Subsampled.fas.model.gz
-CPU time for ModelFinder: 91.205 seconds (0h:1m:31s)
-Wall-clock time for ModelFinder: 50.990 seconds (0h:0m:50s)
+CPU time for ModelFinder: 90.120 seconds (0h:1m:30s)
+Wall-clock time for ModelFinder: 50.162 seconds (0h:0m:50s)
 
-Model: KOSI07+FU; df: 29; loglike: -330.816; BIC score: 743.794
+Model: KOSI07+FU; df: 29; loglike: -327.759; BIC score: 737.681
 
 Keep adding an additional class until there is no better BIC value
 
 NOTE: MixtureFinder 2-class models requires 6 MB RAM!
 ModelFinder will test up to 12 codon models (sample size: 17 epsilon: 0.100) ...
  No. Model         -LnL         df  AIC          AICc         BIC
-ERROR: Frequency mixture name not found U
+  1  MIX{KOSI07+FU,GY+F1X4} 361.667      35  793.334      3313.334     822.497
+  2  MIX{KOSI07+FU,GY+F3X4} 361.039      41  804.078      4248.078     838.240
+  3  MIX{KOSI07+FU,MGK+F1X4} 362.523      35  795.046      3315.046     824.209
+  4  MIX{KOSI07+FU,MGK+F3X4} 362.295      41  806.589      4250.589     840.751
+  5  MIX{KOSI07+FU,MG+F1X4} 362.523      34  793.046      3173.046     821.375
+  6  MIX{KOSI07+FU,MG+F3X4} 362.295      40  804.589      4084.589     837.918
+  7  MIX{KOSI07+FU,KOSI07+FU} 361.792      30  783.585      2643.585     808.581
+  8  MIX{KOSI07+FU,KOSI07+F1X4} 361.244      33  788.489      3032.489     815.985
+  9  MIX{KOSI07+FU,KOSI07+F3X4} 361.406      39  800.812      3920.812     833.307
+ 10  MIX{KOSI07+FU,SCHN05+FU} 362.987      30  785.973      2645.973     810.970
+ 11  MIX{KOSI07+FU,SCHN05+F1X4} 363.146      33  792.291      3036.291     819.787
+ 12  MIX{KOSI07+FU,SCHN05+F3X4} 364.543      39  807.085      3927.085     839.580
+Best-fit model: MIX{KOSI07+FU,KOSI07+FU} chosen according to BIC
+
+All model information printed to Sorensen2006.H3.Aligned.NT.Subsampled.fas.model.gz
+CPU time for MixtureFinder 2-class models: 14.217 seconds (0h:0m:14s)
+Wall-clock time for MixtureFinder 2-class models: 7.688 seconds (0h:0m:7s)
+
+Model: MIX{KOSI07+FU,KOSI07+FU}; df: 30; loglike: -361.792; BIC score: 808.581;
+
+The optimal RHAS models with 1-class substitution models have already been estimated.
+
+-------------------------------------------------------
+  Best-fit Q-Mixture model: KOSI07+FU
+-------------------------------------------------------
+WARNING: States(s) AAC, AAT, ACA, ATA, ATC, ATG, ATT, CAC, CAT, CTA, GAA, GAC, GAG, GAT, GTA, GTC, GTG, GTT, TAC, TAT, TGC, TGG, TTA, TTC, TTT rarely appear in alignment and may cause numerical problems
+Generating 1000 samples for ultrafast bootstrap (seed: 945724)...
+
+NOTE: 1 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -349.536
+Optimal log-likelihood: -326.790
+Nonsynonymous/synonymous ratio (omega): 0.015
+Transition/transversion ratio (kappa): 1.511
+Parameters optimization took 1 rounds (0.062 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.145677 secs using 209.3% CPU
+Computing ML distances took 0.146846 sec (of wall-clock time) 0.305169 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 0.00890417 secs
+Constructing RapidNJ tree: done in 0.00753223 secs
+Computing RapidNJ tree took 0.017936 sec (of wall-clock time) 0.000000 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -325.773
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.030 second
+Computing log-likelihood of 98 initial trees ... 0.743 seconds
+Current best score: -325.773
+
+Do NNI search on 20 best initial trees
+Optimizing NNI: done in 0.0921624 secs using 207.6% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -325.232
+Optimizing NNI: done in 0.147916 secs using 204.6% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -325.058
+Optimizing NNI: done in 0.455327 secs using 209% CPU
+Optimizing NNI: done in 0.146293 secs using 209.1% CPU
+Optimizing NNI: done in 0.264545 secs using 200.5% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 5: -324.433
+Optimizing NNI: done in 0.310623 secs using 206.7% CPU
+Optimizing NNI: done in 0.28975 secs using 214.7% CPU
+Optimizing NNI: done in 0.156294 secs using 224% CPU
+Optimizing NNI: done in 0.162656 secs using 219.6% CPU
+Optimizing NNI: done in 0.363014 secs using 223.5% CPU
+Iteration 10 / LogL: -325.292 / Time: 0h:1m:1s
+Optimizing NNI: done in 0.170369 secs using 217.1% CPU
+Optimizing NNI: done in 0.549765 secs using 219.2% CPU
+Optimizing NNI: done in 0.17484 secs using 213.2% CPU
+Optimizing NNI: done in 0.193099 secs using 218.9% CPU
+Optimizing NNI: done in 0.265143 secs using 219.5% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 15: -323.660
+Optimizing NNI: done in 0.235632 secs using 220.5% CPU
+Optimizing NNI: done in 0.34644 secs using 221.7% CPU
+Optimizing NNI: done in 0.140197 secs using 212.1% CPU
+Optimizing NNI: done in 0.140621 secs using 216.9% CPU
+Optimizing NNI: done in 0.343101 secs using 220.4% CPU
+Iteration 20 / LogL: -325.229 / Time: 0h:1m:4s
+Finish initializing candidate tree set (20)
+Current best tree score: -323.660 / CPU time: 5.848
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 0.0452341 secs using 223.7% CPU
+Optimizing NNI: done in 0.246035 secs using 215.7% CPU
+Optimizing NNI: done in 0.562925 secs using 204.7% CPU
+Optimizing NNI: done in 0.185699 secs using 219.6% CPU
+Optimizing NNI: done in 0.207988 secs using 217% CPU
+Optimizing NNI: done in 0.370714 secs using 205.8% CPU
+Optimizing NNI: done in 0.321218 secs using 208.7% CPU
+Optimizing NNI: done in 0.164291 secs using 207.5% CPU
+Optimizing NNI: done in 0.125752 secs using 196.3% CPU
+Optimizing NNI: done in 0.118191 secs using 210.4% CPU
+Iteration 30 / LogL: -324.233 / Time: 0h:1m:6s (0h:0m:25s left)
+Optimizing NNI: done in 0.169172 secs using 207.6% CPU
+Optimizing NNI: done in 0.356976 secs using 208.2% CPU
+Optimizing NNI: done in 0.146071 secs using 211.4% CPU
+Optimizing NNI: done in 0.138537 secs using 208.6% CPU
+BETTER TREE FOUND at iteration 34: -323.660
+Optimizing NNI: done in 0.144598 secs using 211.8% CPU
+Optimizing NNI: done in 0.0493245 secs using 201% CPU
+BETTER TREE FOUND at iteration 36: -323.660
+Optimizing NNI: done in 0.247898 secs using 209.4% CPU
+Optimizing NNI: done in 0.304657 secs using 208.7% CPU
+Optimizing NNI: done in 0.208554 secs using 209.9% CPU
+UPDATE BEST LOG-LIKELIHOOD: -323.660
+Optimizing NNI: done in 0.157039 secs using 211.4% CPU
+Iteration 40 / LogL: -323.965 / Time: 0h:1m:8s (0h:0m:26s left)
+Optimizing NNI: done in 0.171379 secs using 206.7% CPU
+Optimizing NNI: done in 0.0820859 secs using 205.9% CPU
+Optimizing NNI: done in 0.130912 secs using 210% CPU
+Optimizing NNI: done in 0.124772 secs using 209.6% CPU
+Optimizing NNI: done in 0.168836 secs using 207.4% CPU
+Optimizing NNI: done in 0.201691 secs using 209.4% CPU
+Optimizing NNI: done in 0.0687554 secs using 200.2% CPU
+Optimizing NNI: done in 0.196734 secs using 211.3% CPU
+Optimizing NNI: done in 0.150646 secs using 207.1% CPU
+Optimizing NNI: done in 0.0752387 secs using 201.7% CPU
+UPDATE BEST LOG-LIKELIHOOD: -323.660
+Iteration 50 / LogL: -323.660 / Time: 0h:1m:9s (0h:0m:21s left)
+Optimizing NNI: done in 0.269732 secs using 208.4% CPU
+Optimizing NNI: done in 0.127955 secs using 211.2% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 52: -323.584
+Optimizing NNI: done in 0.0965605 secs using 203.2% CPU
+Optimizing NNI: done in 0.199039 secs using 210.1% CPU
+Optimizing NNI: done in 0.0810829 secs using 201% CPU
+Optimizing NNI: done in 0.120054 secs using 208.2% CPU
+Optimizing NNI: done in 0.222385 secs using 209.6% CPU
+Optimizing NNI: done in 0.14468 secs using 210.4% CPU
+Optimizing NNI: done in 0.122689 secs using 212% CPU
+Optimizing NNI: done in 0.126788 secs using 210.1% CPU
+Iteration 60 / LogL: -324.482 / Time: 0h:1m:11s (0h:0m:21s left)
+Optimizing NNI: done in 0.143962 secs using 203.3% CPU
+Optimizing NNI: done in 0.196617 secs using 209.5% CPU
+Optimizing NNI: done in 0.160817 secs using 210.2% CPU
+Optimizing NNI: done in 0.168467 secs using 207.4% CPU
+Optimizing NNI: done in 0.119899 secs using 209% CPU
+Optimizing NNI: done in 0.125975 secs using 207.9% CPU
+Optimizing NNI: done in 0.167986 secs using 196.5% CPU
+Optimizing NNI: done in 0.135467 secs using 212% CPU
+UPDATE BEST LOG-LIKELIHOOD: -323.581
+Optimizing NNI: done in 0.189824 secs using 210.4% CPU
+Optimizing NNI: done in 0.118292 secs using 205.9% CPU
+Iteration 70 / LogL: -323.661 / Time: 0h:1m:13s (0h:0m:18s left)
+Optimizing NNI: done in 0.154198 secs using 207.2% CPU
+Optimizing NNI: done in 0.156506 secs using 206% CPU
+Optimizing NNI: done in 0.0922374 secs using 205.9% CPU
+Optimizing NNI: done in 0.168832 secs using 199% CPU
+Optimizing NNI: done in 0.14401 secs using 205.3% CPU
+Optimizing NNI: done in 0.242323 secs using 204.2% CPU
+Optimizing NNI: done in 0.29304 secs using 202.3% CPU
+Optimizing NNI: done in 0.160161 secs using 210.7% CPU
+Optimizing NNI: done in 0.109479 secs using 207.2% CPU
+Optimizing NNI: done in 0.233433 secs using 204.7% CPU
+Iteration 80 / LogL: -325.248 / Time: 0h:1m:14s (0h:0m:15s left)
+Optimizing NNI: done in 0.0895022 secs using 199.6% CPU
+Optimizing NNI: done in 0.118854 secs using 209.1% CPU
+Optimizing NNI: done in 0.153191 secs using 210.6% CPU
+Optimizing NNI: done in 0.126345 secs using 200.8% CPU
+Optimizing NNI: done in 0.167342 secs using 207.6% CPU
+Optimizing NNI: done in 0.165342 secs using 206.7% CPU
+Optimizing NNI: done in 0.188184 secs using 204.3% CPU
+Optimizing NNI: done in 0.227489 secs using 202.6% CPU
+Optimizing NNI: done in 0.0725372 secs using 187.5% CPU
+Optimizing NNI: done in 0.1754 secs using 206.2% CPU
+Iteration 90 / LogL: -323.582 / Time: 0h:1m:16s (0h:0m:12s left)
+Optimizing NNI: done in 0.160367 secs using 201.4% CPU
+Optimizing NNI: done in 0.193302 secs using 208.4% CPU
+Optimizing NNI: done in 0.183526 secs using 208% CPU
+Optimizing NNI: done in 0.1782 secs using 211.3% CPU
+Optimizing NNI: done in 0.132041 secs using 205.9% CPU
+Optimizing NNI: done in 0.187224 secs using 211% CPU
+Optimizing NNI: done in 0.198808 secs using 208.5% CPU
+Optimizing NNI: done in 0.285411 secs using 208.3% CPU
+Optimizing NNI: done in 0.143128 secs using 207% CPU
+Optimizing NNI: done in 0.131247 secs using 209.3% CPU
+Iteration 100 / LogL: -323.660 / Time: 0h:1m:18s (0h:0m:10s left)
+Optimizing NNI: done in 0.17451 secs using 209.2% CPU
+Optimizing NNI: done in 0.176772 secs using 207.8% CPU
+Optimizing NNI: done in 0.135258 secs using 205.9% CPU
+Optimizing NNI: done in 0.146918 secs using 211.3% CPU
+Optimizing NNI: done in 0.246151 secs using 209.4% CPU
+Optimizing NNI: done in 0.104455 secs using 194.4% CPU
+Optimizing NNI: done in 0.316733 secs using 210% CPU
+Optimizing NNI: done in 0.272594 secs using 209.1% CPU
+Optimizing NNI: done in 0.225558 secs using 207.7% CPU
+Optimizing NNI: done in 0.194893 secs using 201.7% CPU
+Iteration 110 / LogL: -325.111 / Time: 0h:1m:20s (0h:0m:8s left)
+Optimizing NNI: done in 0.163827 secs using 210.5% CPU
+Optimizing NNI: done in 0.136135 secs using 209.6% CPU
+Optimizing NNI: done in 0.309649 secs using 210.4% CPU
+Optimizing NNI: done in 0.286479 secs using 207.9% CPU
+Optimizing NNI: done in 0.285387 secs using 207.8% CPU
+Optimizing NNI: done in 0.204734 secs using 206.3% CPU
+Optimizing NNI: done in 0.209138 secs using 207.9% CPU
+Optimizing NNI: done in 0.158463 secs using 209.8% CPU
+Optimizing NNI: done in 0.136822 secs using 206.9% CPU
+Optimizing NNI: done in 0.164017 secs using 206.9% CPU
+Iteration 120 / LogL: -323.582 / Time: 0h:1m:22s (0h:0m:6s left)
+Optimizing NNI: done in 0.333204 secs using 207.4% CPU
+Optimizing NNI: done in 0.130525 secs using 207% CPU
+Optimizing NNI: done in 0.320354 secs using 209.4% CPU
+Optimizing NNI: done in 0.274219 secs using 200.9% CPU
+Optimizing NNI: done in 0.205423 secs using 205.9% CPU
+Optimizing NNI: done in 0.133763 secs using 204.6% CPU
+Optimizing NNI: done in 0.160537 secs using 207.5% CPU
+Optimizing NNI: done in 0.360545 secs using 204.2% CPU
+Optimizing NNI: done in 0.123748 secs using 210% CPU
+Optimizing NNI: done in 0.206954 secs using 204.7% CPU
+Iteration 130 / LogL: -324.786 / Time: 0h:1m:24s (0h:0m:4s left)
+Optimizing NNI: done in 0.147301 secs using 199.1% CPU
+Optimizing NNI: done in 0.142321 secs using 200.8% CPU
+Optimizing NNI: done in 0.146349 secs using 199.3% CPU
+Optimizing NNI: done in 0.0876523 secs using 203.1% CPU
+Optimizing NNI: done in 0.146618 secs using 201.5% CPU
+Optimizing NNI: done in 0.122195 secs using 202.3% CPU
+Optimizing NNI: done in 0.0389225 secs using 187.7% CPU
+Optimizing NNI: done in 0.135035 secs using 198.7% CPU
+Optimizing NNI: done in 0.155607 secs using 198.8% CPU
+Optimizing NNI: done in 0.182533 secs using 200.8% CPU
+Iteration 140 / LogL: -323.661 / Time: 0h:1m:26s (0h:0m:2s left)
+Optimizing NNI: done in 0.136686 secs using 205% CPU
+Optimizing NNI: done in 0.230518 secs using 201.8% CPU
+Optimizing NNI: done in 0.190848 secs using 197.8% CPU
+Optimizing NNI: done in 0.178783 secs using 199.2% CPU
+Optimizing NNI: done in 0.198376 secs using 203.4% CPU
+Optimizing NNI: done in 0.165906 secs using 195.9% CPU
+Optimizing NNI: done in 0.180537 secs using 203.5% CPU
+Optimizing NNI: done in 0.225685 secs using 201.6% CPU
+Optimizing NNI: done in 0.0951588 secs using 197.5% CPU
+Optimizing NNI: done in 0.192431 secs using 207.7% CPU
+Iteration 150 / LogL: -323.661 / Time: 0h:1m:28s (0h:0m:0s left)
+Optimizing NNI: done in 0.214371 secs using 211.1% CPU
+Optimizing NNI: done in 0.131533 secs using 205.5% CPU
+Optimizing NNI: done in 0.115041 secs using 204.2% CPU
+Refining ufboot trees with NNI 1 branch...
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0399106 secs using 108.7% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0768881 secs using 106.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0344699 secs using 110.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0370442 secs using 109.1% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0138005 secs using 114.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0579091 secs using 107.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0398081 secs using 108.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0734708 secs using 106.9% CPU
+WARNING: 2 threads for alignment length 14 will slow down analysis
+Optimizing NNI: done in 0.0318507 secs using 110.2% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0546409 secs using 107.3% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0331897 secs using 110% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.03282 secs using 109.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0291676 secs using 110.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0353681 secs using 109.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0347119 secs using 108.5% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0451057 secs using 108.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0281468 secs using 110% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0361639 secs using 109.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0315981 secs using 109.7% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0413146 secs using 108.8% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0745494 secs using 107% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0412162 secs using 108.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0785886 secs using 106.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0837293 secs using 106.9% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.025563 secs using 110.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0263111 secs using 110.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0480203 secs using 108% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0477908 secs using 108.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0311029 secs using 109.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0295644 secs using 109.7% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0273464 secs using 110.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0295908 secs using 110.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0638242 secs using 107.1% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0257191 secs using 110.8% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0430427 secs using 109.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0413456 secs using 109.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0923677 secs using 106.6% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0478872 secs using 108% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0258373 secs using 109.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0443924 secs using 108% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0245361 secs using 112.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0371164 secs using 109.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0255846 secs using 112.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.042959 secs using 108.3% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0538138 secs using 107.9% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0493288 secs using 107.9% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.044944 secs using 107.9% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0292475 secs using 109.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0758497 secs using 93.07% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0419132 secs using 108.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0583365 secs using 107.7% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.033292 secs using 109% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0535142 secs using 107.4% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0688409 secs using 107% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0614262 secs using 107.3% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0350831 secs using 109.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0432056 secs using 108.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0586646 secs using 107.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0396513 secs using 108.8% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0303243 secs using 109.9% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0329282 secs using 109.5% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0282796 secs using 109.9% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0655691 secs using 109.3% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0741268 secs using 111.6% CPU
+WARNING: 2 threads for alignment length 14 will slow down analysis
+Optimizing NNI: done in 0.024893 secs using 115.7% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0470232 secs using 112.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0285109 secs using 115.1% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0667952 secs using 111.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0479134 secs using 112.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0256783 secs using 114.6% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0501493 secs using 112.9% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0384772 secs using 113.3% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0234232 secs using 115.8% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0497979 secs using 112.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0516305 secs using 112.7% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.026607 secs using 114.6% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0517439 secs using 112.3% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0452265 secs using 112.7% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0437122 secs using 112.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0585166 secs using 112.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0434934 secs using 112.9% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0255052 secs using 115.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0288299 secs using 77.81% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0618173 secs using 111.9% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0203916 secs using 116.5% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0252164 secs using 116% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0445651 secs using 113.3% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0481155 secs using 112.5% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0259062 secs using 118.1% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0436591 secs using 114.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.063798 secs using 111.7% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0243215 secs using 116.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0252568 secs using 115.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0691356 secs using 111.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0300799 secs using 114.3% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0308525 secs using 114.8% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0350503 secs using 114% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0610163 secs using 111.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0249498 secs using 114.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0209122 secs using 117.4% CPU
+100 samples done
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0306054 secs using 114% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0565001 secs using 93.64% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0459455 secs using 114.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0374615 secs using 114.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0753354 secs using 111.9% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.02642 secs using 115.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0506902 secs using 112.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0247725 secs using 115.5% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0522268 secs using 112.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0232772 secs using 115.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.032175 secs using 114.5% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0138996 secs using 124.6% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0453463 secs using 113.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0254648 secs using 114.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0278458 secs using 114.7% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0580204 secs using 112.3% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.042735 secs using 112.8% CPU
+WARNING: 2 threads for alignment length 14 will slow down analysis
+Optimizing NNI: done in 0.0461934 secs using 112.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0479479 secs using 112.5% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0643952 secs using 111.8% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0395089 secs using 113.3% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0538655 secs using 112.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0340564 secs using 113.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0202536 secs using 117.6% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0318178 secs using 113.9% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0276106 secs using 115.3% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0236166 secs using 117.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0399963 secs using 113% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0213196 secs using 115.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0492043 secs using 112.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0391914 secs using 113.3% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0418111 secs using 112.6% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0262081 secs using 115.9% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0228974 secs using 115.8% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0532835 secs using 112.3% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.033427 secs using 114.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0549759 secs using 112% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0347951 secs using 113.3% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0341362 secs using 114% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0554488 secs using 112.3% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.029779 secs using 113.8% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0536775 secs using 112.2% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0274978 secs using 116.9% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0189428 secs using 116.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0402091 secs using 113.5% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0387936 secs using 114.8% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0233467 secs using 114.5% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0339129 secs using 108.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0254471 secs using 110.8% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0500879 secs using 107.8% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0630009 secs using 107.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0216266 secs using 110.8% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0688414 secs using 107% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0553903 secs using 108.2% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0258197 secs using 110% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.028795 secs using 111.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0122967 secs using 115.9% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0230663 secs using 111.3% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0250704 secs using 110.8% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0261007 secs using 110.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0926325 secs using 106.5% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0643647 secs using 107.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.047686 secs using 108.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0808129 secs using 106.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0347639 secs using 108.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0287328 secs using 111.5% CPU
+WARNING: 2 threads for alignment length 15 will slow down analysis
+Optimizing NNI: done in 0.029034 secs using 110.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0805195 secs using 106.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0269739 secs using 111.6% CPU
+WARNING: 2 threads for alignment length 14 will slow down analysis
+Optimizing NNI: done in 0.0305686 secs using 109.6% CPU
+WARNING: 2 threads for alignment length 14 will slow down analysis
+Optimizing NNI: done in 0.0323181 secs using 109.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0431887 secs using 108.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0268835 secs using 109.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0605041 secs using 107.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0691297 secs using 107.5% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0651644 secs using 107.6% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0434972 secs using 109.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.026311 secs using 111.3% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0321231 secs using 110% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0371587 secs using 109.3% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0563991 secs using 108.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0458534 secs using 108.6% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0391381 secs using 109% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0338839 secs using 110% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0423678 secs using 108.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.055206 secs using 107.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0356522 secs using 109.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0697402 secs using 107.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.010322 secs using 117.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0482261 secs using 108.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0708677 secs using 110.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0309814 secs using 113.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0238743 secs using 114.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0564634 secs using 111.7% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.022112 secs using 114.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0484344 secs using 111.5% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0437789 secs using 111.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.029678 secs using 113.5% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0246371 secs using 113.7% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.037104 secs using 113% CPU
+200 samples done
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0451637 secs using 111.6% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0772662 secs using 110.5% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0305495 secs using 113.6% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0434723 secs using 111.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0268847 secs using 113.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0883112 secs using 110.3% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0272835 secs using 113.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0219817 secs using 115% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0308916 secs using 113.6% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0501964 secs using 111.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0396952 secs using 112.1% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0639123 secs using 111.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0365893 secs using 113% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.04773 secs using 111.2% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.034196 secs using 113.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0548787 secs using 111.3% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0284126 secs using 113% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0580907 secs using 111.2% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0494799 secs using 112.6% CPU
+WARNING: 2 threads for alignment length 14 will slow down analysis
+Optimizing NNI: done in 0.030515 secs using 112.8% CPU
+WARNING: 2 threads for alignment length 14 will slow down analysis
+Optimizing NNI: done in 0.0352262 secs using 112.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0515713 secs using 111.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0322943 secs using 113.6% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0340305 secs using 113.5% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0221752 secs using 115.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.047366 secs using 112.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0344036 secs using 112.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0300753 secs using 113.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0569738 secs using 111.1% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0432903 secs using 112.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0246707 secs using 114.4% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0426102 secs using 112.3% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0499867 secs using 111.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0545937 secs using 111.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0311005 secs using 113.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0212782 secs using 115.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0238708 secs using 114.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.036608 secs using 112.8% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0252093 secs using 114.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0630699 secs using 111.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0809679 secs using 110.3% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0484034 secs using 112.5% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0240339 secs using 115.8% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.032731 secs using 113.3% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.049264 secs using 90.3% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.039103 secs using 111.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0408353 secs using 111.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0388943 secs using 112.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0549627 secs using 111.1% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0805515 secs using 110.3% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0420825 secs using 112.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0249769 secs
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0482129 secs using 111.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0203633 secs using 115.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0529476 secs using 111.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.014974 secs using 120.6% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.040297 secs using 113.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.036296 secs using 113.1% CPU
+WARNING: 2 threads for alignment length 14 will slow down analysis
+Optimizing NNI: done in 0.0241108 secs using 113.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0582168 secs using 111.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.04218 secs using 112.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0520249 secs using 111.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0422681 secs using 112.8% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0266709 secs using 113.5% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0403267 secs using 112.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0561378 secs using 111% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0544283 secs using 111.3% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0482802 secs using 111.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0699626 secs using 110.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0351275 secs using 112.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0561263 secs using 111.5% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0345932 secs using 113.9% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.058813 secs using 111% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0401877 secs using 113.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0257776 secs using 114.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0409299 secs using 112.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0415247 secs using 113.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0156107 secs using 122.5% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0519459 secs using 91.86% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0433318 secs using 113.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0290906 secs using 115.1% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0422933 secs using 112% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0632466 secs using 110.6% CPU
+WARNING: 2 threads for alignment length 7 will slow down analysis
+Optimizing NNI: done in 0.0321305 secs using 114.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0569264 secs using 111.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0370053 secs using 112.5% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0476612 secs using 111.8% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0658066 secs using 111% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0478598 secs using 111.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0351902 secs using 114% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0350139 secs using 113.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0447669 secs using 112% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0386646 secs using 112.1% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0299944 secs using 113.6% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0470399 secs using 111.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0555549 secs using 111.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0226069 secs using 115.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.071088 secs using 110.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0215722 secs using 115.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0443239 secs using 112% CPU
+300 samples done
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0141922 secs using 118.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0360443 secs using 112.9% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0101396 secs using 122% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.024654 secs using 113.8% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0376144 secs using 112.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0508423 secs using 111.6% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0103535 secs using 120.7% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0306934 secs using 114.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0278984 secs using 113.8% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0533461 secs using 111.3% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.104428 secs using 110.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0450424 secs using 111.5% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0525955 secs using 111.7% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0469156 secs using 111.7% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0436329 secs using 111.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0916564 secs using 106.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.076784 secs using 106.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.05911 secs using 107.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0727342 secs using 107.1% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0524459 secs using 107.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0309779 secs using 109.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0317954 secs using 109.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0603281 secs using 107.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0265332 secs using 110.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.07016 secs using 107.3% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0485386 secs using 108.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0597719 secs using 108.8% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.073071 secs using 107.5% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0679842 secs using 107.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0315431 secs using 111.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0714793 secs using 107.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0678663 secs using 107.8% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0431213 secs using 108.6% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0476402 secs using 108.3% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0358461 secs using 110% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0279629 secs using 110.9% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0328129 secs using 111% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0581435 secs using 107.5% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0379842 secs using 111.8% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0319317 secs using 109.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0575563 secs using 108.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0740934 secs using 107.7% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0314714 secs using 110.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.115245 secs using 106.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0425918 secs using 108.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0232817 secs using 111% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0752684 secs using 107.5% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.050869 secs using 108% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0425149 secs using 108.3% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0300731 secs using 109.3% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0270028 secs using 111.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.124278 secs using 106.2% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0479607 secs using 108.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0821267 secs using 106.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.123961 secs using 107% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.12988 secs using 106.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0668033 secs using 107.8% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0899265 secs using 107.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0907959 secs using 107.9% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0614704 secs using 109.3% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0970933 secs using 107.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0807062 secs using 108.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.178973 secs using 106.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.150096 secs using 107.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.094189 secs using 108.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0951032 secs using 108.2% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.158131 secs using 107% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.26809 secs using 106.1% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0874009 secs using 108.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.128583 secs using 98.97% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.112814 secs using 107.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.133442 secs using 107.1% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.170272 secs using 106.3% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0931203 secs using 107.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0418616 secs using 109.3% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0648428 secs using 108.1% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.065192 secs using 107.5% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0390323 secs using 110.5% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0795373 secs using 107.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0354552 secs using 109.7% CPU
+WARNING: 2 threads for alignment length 14 will slow down analysis
+Optimizing NNI: done in 0.0319225 secs using 111.5% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0863123 secs using 107.7% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0490956 secs using 108.9% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0378865 secs using 110.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0318394 secs using 111.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0918161 secs using 107.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0874979 secs using 107.7% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0526173 secs using 109.8% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.106591 secs using 106.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.041783 secs using 104% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0299495 secs using 105.3% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0659705 secs using 102.8% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0513332 secs using 103.3% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0870553 secs using 102.5% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0166043 secs using 109.5% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0544948 secs using 103.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0358482 secs using 104.6% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.195669 secs using 101.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.326481 secs using 101.1% CPU
+WARNING: NNI search needs unusual large number of steps (16) to converge!
+WARNING: 2 threads for alignment length 14 will slow down analysis
+Optimizing NNI: done in 0.0639509 secs using 104.4% CPU
+400 samples done
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0452449 secs using 105.3% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0760651 secs using 104% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.101515 secs using 102.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.134554 secs using 102% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0940268 secs using 103% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0826062 secs using 102.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0616368 secs using 103.3% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0589111 secs using 103.5% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.029978 secs using 105.9% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0540969 secs using 103.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0367775 secs using 105.1% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0326183 secs using 105.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0383224 secs using 104.6% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0460052 secs using 104.1% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.049402 secs using 104% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0632971 secs using 103.3% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0618483 secs using 103.6% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0645982 secs using 104% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0290998 secs using 105.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0234134 secs using 105.5% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0299625 secs using 105.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.101499 secs using 101.9% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0561457 secs using 103.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0311491 secs using 104.8% CPU
+WARNING: 2 threads for alignment length 14 will slow down analysis
+Optimizing NNI: done in 0.0503715 secs using 103.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0398895 secs using 103.6% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.022164 secs using 105.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0305349 secs using 105.5% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0317 secs using 105% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0290864 secs using 104.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0366873 secs using 103.9% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0303038 secs using 104.5% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0695695 secs using 102.5% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0307741 secs using 104.5% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0221102 secs using 106.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0283028 secs using 106.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0416249 secs using 103.8% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0261362 secs using 107.8% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0404634 secs using 104.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0832244 secs using 102.4% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0602647 secs using 104.5% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0109296 secs using 113.1% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0643735 secs using 102.5% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0355275 secs using 104.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.059053 secs using 102.8% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0607963 secs using 102.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0619178 secs using 102.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0427746 secs using 108.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.060508 secs using 108.3% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.074199 secs using 107.6% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0494039 secs using 108.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0493865 secs using 108.1% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.060659 secs using 108.7% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0576091 secs using 108.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0360521 secs using 109.3% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0305493 secs using 109.3% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.097222 secs using 106.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0664431 secs using 107.2% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0467191 secs using 108.4% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0353473 secs using 111.7% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0507113 secs using 107.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0266675 secs using 111.5% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0274258 secs using 110% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0563274 secs using 108.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0325881 secs using 109.7% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0299937 secs using 110.1% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0558624 secs using 107.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0610351 secs using 107.5% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0370668 secs using 109.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0280064 secs using 109.8% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0429096 secs using 108.3% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.026808 secs using 110.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0497708 secs using 108.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0717067 secs using 107% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0383162 secs using 109.3% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0404706 secs using 108.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0255838 secs using 110.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0255737 secs using 110.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0837564 secs using 106.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0538553 secs using 107.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0308822 secs using 109.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0581435 secs using 108.3% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0255929 secs using 112% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0164876 secs using 113.2% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0526674 secs using 107.6% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.030105 secs using 110.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.013701 secs using 117.1% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.030616 secs using 110.7% CPU
+WARNING: 2 threads for alignment length 6 will slow down analysis
+Optimizing NNI: done in 0.0927694 secs using 107.6% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0818849 secs using 107.9% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0122823 secs using 121.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0678234 secs using 111.5% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0317936 secs using 115.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0742362 secs using 111.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0269067 secs using 114.3% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0267296 secs using 114.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0258613 secs using 114.9% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.03485 secs using 113.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0235599 secs using 115.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0289758 secs using 115.9% CPU
+500 samples done
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0305295 secs using 114.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0408321 secs using 112.6% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0594141 secs using 111.6% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0594518 secs using 111.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0819241 secs using 111.6% CPU
+WARNING: 2 threads for alignment length 15 will slow down analysis
+Optimizing NNI: done in 0.0309857 secs using 113.7% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0523187 secs using 111.9% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0889565 secs using 111.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0246797 secs using 114.9% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0516863 secs using 113% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0309677 secs using 79.59% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0379664 secs using 112.7% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0342651 secs using 113% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0378582 secs using 114.4% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.061844 secs using 111.5% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0335844 secs using 113.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0290351 secs using 115.6% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0465804 secs using 112% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0402324 secs using 112.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0291765 secs using 114% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0846624 secs using 110.9% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0236194 secs using 114.8% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0559533 secs using 112.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0127682 secs using 122.1% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0301187 secs using 113.9% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0264197 secs using 115.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0587311 secs using 112.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0261156 secs using 113.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0269205 secs using 114% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0524442 secs using 111.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0236638 secs using 115.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0272219 secs using 114.3% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0458601 secs using 112.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0727606 secs using 111.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0828535 secs using 110.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0291436 secs using 114.3% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0308313 secs using 114% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0413002 secs using 112.8% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0485417 secs using 112.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0423972 secs using 112.7% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0284717 secs using 114.8% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.037711 secs using 112.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0374234 secs using 114.7% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.124069 secs using 110.5% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0892873 secs using 110.9% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0296617 secs using 114.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0197897 secs using 116.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.029294 secs using 114.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.026067 secs using 115.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0494578 secs using 112.3% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0361645 secs using 113.8% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0829264 secs using 110.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0236874 secs using 115.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0308809 secs using 113.6% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0283156 secs using 116.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0551335 secs using 112.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0474444 secs using 113.6% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.074869 secs using 111.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0578998 secs using 112.3% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0485365 secs using 113.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0818335 secs using 111% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0642757 secs using 112.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0620697 secs using 112.1% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0324557 secs using 114.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0562453 secs using 112.3% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.06977 secs using 111.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0503296 secs using 113.2% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0383348 secs using 113.1% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0120364 secs using 120.7% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0541614 secs using 112.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0279143 secs using 115.3% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0491411 secs using 113% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0306249 secs
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0283285 secs using 114.6% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0169151 secs using 117% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0321244 secs using 113.7% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0257308 secs using 114.1% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0485378 secs using 111.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.100844 secs using 110.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0327637 secs using 113.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.107944 secs using 110.5% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0387763 secs using 112.5% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.044096 secs using 113.1% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0559284 secs using 112% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0357791 secs using 113.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0329838 secs using 113.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0313721 secs using 113.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0115336 secs using 119.7% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0295836 secs using 114.3% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0559774 secs using 111.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0226574 secs using 114.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0299876 secs using 114.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0929597 secs using 99.36% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.021222 secs using 115.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0238627 secs using 114.8% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0678689 secs using 111.5% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0460788 secs using 111.8% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0334448 secs using 95.83% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0305502 secs using 113.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0281274 secs using 115.2% CPU
+600 samples done
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.046671 secs using 112.3% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0563803 secs using 111.6% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0238808 secs using 114.2% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0243344 secs using 114.6% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0214351 secs using 114.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0452961 secs using 112.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0212481 secs using 116.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0787731 secs using 110.9% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0344808 secs using 112.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0450065 secs using 113% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0542841 secs using 112.2% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0439277 secs using 116.3% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0442933 secs using 114.1% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0366277 secs using 114.8% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0489623 secs using 114.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0459474 secs using 114.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0675922 secs using 113.5% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0505843 secs using 113.7% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0320753 secs using 115.8% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.027009 secs using 116.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0427243 secs using 114.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0268733 secs using 116.4% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0555928 secs using 113.9% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0737353 secs using 113.1% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0490064 secs using 113.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.04361 secs using 114.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0439396 secs using 115.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0706496 secs using 113.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.029071 secs using 116.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0658608 secs using 113.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0527042 secs using 114% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.038777 secs using 114.8% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0713794 secs using 113.2% CPU
+WARNING: 2 threads for alignment length 14 will slow down analysis
+Optimizing NNI: done in 0.0262199 secs using 117.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0466959 secs using 114.9% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.061994 secs using 113.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0328817 secs using 115.6% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0557202 secs using 113.8% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0285084 secs using 115.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.074288 secs using 112.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0275221 secs using 116.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0377977 secs using 114.8% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0567329 secs using 114.1% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0476406 secs using 114.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0531996 secs using 113.7% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0527982 secs using 114.3% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0188241 secs using 118.7% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0275781 secs using 116.3% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0285782 secs using 115.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0228375 secs using 116.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0306594 secs using 115.5% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0616407 secs using 113.5% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0260396 secs using 116.5% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0383861 secs using 114.6% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0331438 secs using 116.5% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0500694 secs using 114.5% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0395259 secs using 115.5% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0417109 secs using 89.12% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0263275 secs using 116.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0259586 secs using 116.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0685035 secs using 112.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0509864 secs using 114.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0579707 secs using 114% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0364795 secs using 114.9% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0518441 secs using 114.7% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0451486 secs using 114.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0448682 secs using 115.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.106602 secs using 102.6% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0314581 secs using 116.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0327166 secs using 116.3% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0526888 secs using 114.1% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0321038 secs using 116.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0666857 secs using 115.1% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0609898 secs using 114.1% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0283957 secs using 115.6% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0327941 secs using 116% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0289629 secs using 116.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0273863 secs using 116.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0686065 secs using 113% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0485315 secs using 113.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0386391 secs using 116.8% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0290218 secs using 116% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0292482 secs using 115.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0495234 secs using 113.8% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0256351 secs using 117.9% CPU
+WARNING: 2 threads for alignment length 14 will slow down analysis
+Optimizing NNI: done in 0.038891 secs using 115% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0312139 secs using 115.8% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0165044 secs using 120% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0464628 secs using 114.5% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0594577 secs using 113.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0593281 secs using 113.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0440357 secs using 114.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0472027 secs using 113.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0270238 secs using 116% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.044191 secs using 114.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0324371 secs using 115.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0339079 secs using 114.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0721947 secs using 98.31% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0376455 secs using 115% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0119827 secs using 123.8% CPU
+700 samples done
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0317219 secs using 115.5% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.044908 secs using 115.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0254061 secs using 116.7% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0537259 secs using 113.8% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0497083 secs using 114.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0806456 secs using 113.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0361997 secs using 115.7% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0419648 secs using 114.6% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0624883 secs using 113.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0374963 secs using 114.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0259766 secs using 116.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0251153 secs using 117.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0435223 secs using 114.3% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0562747 secs using 114.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0688402 secs using 113.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0276924 secs using 116.1% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0406964 secs using 114.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0616381 secs using 113.3% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.037114 secs using 114.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0339433 secs using 115% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0596715 secs using 113.5% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0481775 secs using 114.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0818415 secs using 114.2% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0706722 secs using 113.6% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0869736 secs using 113.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0445968 secs using 114.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.165646 secs using 112% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0384997 secs using 114.8% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0638818 secs using 109% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0334012 secs using 108.6% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0442213 secs using 108.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0266854 secs using 111.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0537427 secs using 107.6% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0525888 secs using 108.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0316606 secs using 109% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0677086 secs using 106.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0604754 secs using 106.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0625614 secs using 106.7% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0365189 secs using 110.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.037345 secs using 108.5% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.070977 secs using 106.5% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0295504 secs using 109.2% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0374294 secs using 108.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0339363 secs using 110.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0379758 secs using 108.3% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.078818 secs using 106.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0261108 secs using 111.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0417692 secs using 107.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0335122 secs using 108.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0488668 secs using 107.5% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0644527 secs using 106.8% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0531468 secs using 107.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.044109 secs using 107.8% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0291104 secs using 109.3% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0577937 secs using 107.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0687455 secs using 106.7% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0413569 secs using 108.5% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.114013 secs using 106.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.108764 secs using 107% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0694873 secs using 107.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0428786 secs using 109.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0421791 secs using 109% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.058754 secs using 108.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0344976 secs using 109.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0889696 secs using 106.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0622927 secs using 107.3% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0663677 secs using 107.1% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0455874 secs using 108% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0626297 secs using 107.9% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0566511 secs using 107.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0687039 secs using 107.7% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0286377 secs using 109.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0417297 secs using 108.3% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0360146 secs using 108.6% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0666254 secs using 107.3% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.036438 secs using 108.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0579976 secs using 107.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0239857 secs using 109.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0413614 secs using 107.6% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0429159 secs using 109.1% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0331725 secs using 110.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0692852 secs using 107.3% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0169306 secs using 116% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0330279 secs using 109.5% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0204525 secs using 112.6% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0518635 secs using 109.7% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0399551 secs using 108.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0826802 secs using 107.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0447275 secs using 107.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0283245 secs using 112.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0257302 secs using 109.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0449751 secs using 107.9% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0270609 secs using 110.6% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0394412 secs using 108.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0448825 secs using 107.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0291534 secs using 110.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0914914 secs using 106.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0278495 secs using 109.4% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0739094 secs using 107% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0751105 secs using 106.4% CPU
+800 samples done
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0321271 secs using 109% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0310979 secs using 109.3% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0535099 secs using 107.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0355821 secs using 108.2% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0293797 secs using 110.7% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0295275 secs using 111.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0244674 secs using 110.8% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0890521 secs using 106.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0305062 secs using 109.8% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0233876 secs using 110.5% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0299849 secs using 109.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0307634 secs using 109.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0368877 secs using 108.5% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0252206 secs using 110.1% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0409368 secs using 108.3% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0380192 secs using 108.6% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0632747 secs using 106.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0335393 secs using 108.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.058507 secs using 107% CPU
+WARNING: 2 threads for alignment length 14 will slow down analysis
+Optimizing NNI: done in 0.024138 secs using 110.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0621884 secs using 106.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0745462 secs using 106.5% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0453628 secs using 107.6% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0680721 secs using 106.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0292318 secs using 109.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0670264 secs using 106.7% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0570093 secs using 107.1% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0428148 secs using 108.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0393155 secs using 108.7% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0603303 secs using 106.8% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0256151 secs using 112.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0770349 secs using 106.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0284468 secs using 110.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0461103 secs using 108.3% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0991417 secs using 106.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0329982 secs using 109.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0257788 secs using 111.2% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0307132 secs using 110.1% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0606927 secs using 102.3% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0446966 secs using 101.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0518172 secs using 100.7% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0616904 secs using 100.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0306319 secs using 102.7% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0796468 secs using 99.61% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0673042 secs using 99.92% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0827373 secs using 99.48% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0819018 secs using 99.68% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0318842 secs using 105.1% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0851562 secs using 99.52% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0606942 secs using 100.6% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0485156 secs using 100.7% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.038762 secs using 102.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0360731 secs using 101.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0308633 secs using 102.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.045047 secs using 101% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0440364 secs using 101% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0528867 secs using 100.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0806219 secs using 99.53% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0708492 secs using 99.91% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0579241 secs using 100.7% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0526761 secs using 100.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.041967 secs using 101.1% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0357247 secs using 101.1% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0527186 secs using 100.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0425033 secs using 101% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0319437 secs using 102.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.13209 secs using 98.92% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0358455 secs using 101.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.062139 secs using 100.1% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0562666 secs using 100.4% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0653737 secs using 100% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0425081 secs using 101.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.024422 secs using 105.1% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0712193 secs using 99.93% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0631626 secs using 100.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0388398 secs using 100.9% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0515213 secs using 100.8% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0292126 secs using 102.6% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0274322 secs using 103.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0286178 secs using 103.2% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0602871 secs using 101.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0344489 secs using 104.1% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.031985 secs using 102.7% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.115193 secs using 98.99% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0346463 secs using 102% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.053829 secs using 102% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0320346 secs using 103.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0417335 secs using 101.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0245544 secs using 103.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0476116 secs using 101% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0270042 secs using 104.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0254439 secs using 102.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0324135 secs using 102.9% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0472729 secs using 100.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0615485 secs using 100.1% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0530575 secs using 100% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0484716 secs using 107% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0392021 secs using 109.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.027358 secs using 109.9% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0326857 secs using 110.8% CPU
+900 samples done
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.057765 secs using 107.6% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0293001 secs using 110.3% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0364651 secs using 108.9% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0212076 secs using 110.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0225744 secs using 112% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0328518 secs using 110.1% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0435864 secs using 108% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0529792 secs using 107.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0395193 secs using 108.6% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0712316 secs using 107.8% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0453225 secs using 109.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0271654 secs using 110.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0337785 secs using 109% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0789863 secs using 107.8% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.054997 secs using 107.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0413442 secs using 108.3% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0300463 secs using 110% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0503664 secs using 107.9% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0196281 secs using 111.3% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.053845 secs using 108.2% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0301531 secs using 109.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0377354 secs using 108.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0271944 secs using 110.3% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0426386 secs using 108.2% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0332804 secs using 109.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0496517 secs using 108.4% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.135275 secs using 106.4% CPU
+WARNING: 2 threads for alignment length 7 will slow down analysis
+Optimizing NNI: done in 0.0708383 secs using 107.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.111936 secs using 106.7% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0625396 secs using 108.2% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0729315 secs using 108% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0439412 secs using 109.8% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0637339 secs using 108.3% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0832152 secs using 114.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0980301 secs using 108.6% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0766739 secs using 108.1% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0722499 secs using 108.1% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0970728 secs using 107.4% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0629412 secs using 108.7% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0502474 secs using 113.3% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0535563 secs using 113.8% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0544337 secs using 113.6% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.069964 secs using 112.8% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0907221 secs using 112.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.133772 secs using 111.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0944033 secs using 111.6% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0564065 secs using 112.8% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0509556 secs using 113.1% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0542597 secs using 113.1% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0645347 secs using 97.07% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0823277 secs using 111.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0491072 secs using 112.8% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0305658 secs using 114.8% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0332499 secs using 113.9% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0333142 secs using 114.1% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0765287 secs using 111.9% CPU
+WARNING: 2 threads for alignment length 15 will slow down analysis
+Optimizing NNI: done in 0.0264069 secs using 115.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.024695 secs using 115.8% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.047636 secs using 112.9% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0606164 secs using 112.3% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.100036 secs using 111.4% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0704215 secs using 112.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0329006 secs using 114.8% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0380346 secs using 114.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0535287 secs using 112.9% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0479133 secs using 113.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0525812 secs using 113% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0289168 secs using 115.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0772107 secs using 111.8% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0473751 secs using 113.1% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.026345 secs using 115.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0929551 secs using 111.5% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0383745 secs using 113.9% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0383641 secs using 114% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0818014 secs using 111.8% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.063876 secs using 113% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0865197 secs using 112.3% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0476229 secs using 114.1% CPU
+WARNING: 2 threads for alignment length 13 will slow down analysis
+Optimizing NNI: done in 0.0715342 secs using 112.6% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0355926 secs using 115.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.028066 secs using 116.1% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0381907 secs using 114.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0501927 secs using 113.2% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0824958 secs using 98.97% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0862721 secs using 112.2% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0379103 secs using 114.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0655674 secs using 112.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0423939 secs using 113.4% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.026379 secs using 115.5% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0756873 secs using 111.8% CPU
+WARNING: 2 threads for alignment length 9 will slow down analysis
+Optimizing NNI: done in 0.0557216 secs using 112.6% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.111906 secs using 111.2% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0339288 secs using 115.5% CPU
+WARNING: 2 threads for alignment length 8 will slow down analysis
+Optimizing NNI: done in 0.0688728 secs using 112% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0273333 secs using 115.2% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0435437 secs using 113.7% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0331654 secs using 114.7% CPU
+WARNING: 2 threads for alignment length 12 will slow down analysis
+Optimizing NNI: done in 0.0452854 secs using 113.2% CPU
+WARNING: 2 threads for alignment length 10 will slow down analysis
+Optimizing NNI: done in 0.0511751 secs using 112.5% CPU
+WARNING: 2 threads for alignment length 11 will slow down analysis
+Optimizing NNI: done in 0.0753416 secs using 111.8% CPU
+1000 samples done
+Total 981 ufboot trees refined
+TREE SEARCH COMPLETED AFTER 153 ITERATIONS / Time: 0h:2m:41s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -323.581
+Optimal log-likelihood: -323.581
+Nonsynonymous/synonymous ratio (omega): 0.015
+Transition/transversion ratio (kappa): 1.511
+Parameters optimization took 1 rounds (0.015 sec)
+BEST SCORE FOUND : -323.581
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.026 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file Sorensen2006.H3.Aligned.NT.Subsampled.fas.splits.nex
+Total tree length: 6.689
+
+Total number of iterations: 153
+CPU time used for tree search: 141.174 sec (0h:2m:21s)
+Wall-clock time used for tree search: 103.644 sec (0h:1m:43s)
+Total CPU time used: 246.178 sec (0h:4m:6s)
+Total wall-clock time used: 162.027 sec (0h:2m:42s)
+UFBoot trees printed to Sorensen2006.H3.Aligned.NT.Subsampled.fas.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file Sorensen2006.H3.Aligned.NT.Subsampled.fas.splits.nex...
+16 taxa and 347 splits.
+Consensus tree written to Sorensen2006.H3.Aligned.NT.Subsampled.fas.contree
+Reading input trees file Sorensen2006.H3.Aligned.NT.Subsampled.fas.contree
+Log-likelihood of consensus tree: -324.033
+
+Analysis results written to: 
+  IQ-TREE report:                Sorensen2006.H3.Aligned.NT.Subsampled.fas.iqtree
+  Maximum-likelihood tree:       Sorensen2006.H3.Aligned.NT.Subsampled.fas.treefile
+  Likelihood distances:          Sorensen2006.H3.Aligned.NT.Subsampled.fas.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          Sorensen2006.H3.Aligned.NT.Subsampled.fas.splits.nex
+  Consensus tree:                Sorensen2006.H3.Aligned.NT.Subsampled.fas.contree
+  UFBoot trees:                  Sorensen2006.H3.Aligned.NT.Subsampled.fas.ufboot
+  Screen log file:               Sorensen2006.H3.Aligned.NT.Subsampled.fas.log
+
+Date and Time: Tue Apr 15 13:00:44 2025
