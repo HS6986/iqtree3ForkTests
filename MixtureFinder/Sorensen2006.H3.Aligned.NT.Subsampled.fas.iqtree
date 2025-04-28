@@ -1,8 +1,8 @@
-IQ-TREE 3.0.0 built Apr 15 2025
+IQ-TREE 3.0.0 built Apr 28 2025
 
 Input file name: Sorensen2006.H3.Aligned.NT.Subsampled.fas
 Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
-Random seed number: 945724
+Random seed number: 137450
 
 REFERENCES
 ----------
@@ -41,54 +41,60 @@ Best-fit model according to BIC: KOSI07+FU
 List of models sorted by BIC scores: 
 
 Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
-KOSI07+FU          -327.759     713.518 +    0.386    2453.518 +    0.999     737.681 +    0.549
-KOSI07+FU+G4       -327.047     714.093 +     0.29    2574.093 - 6.56e-27     739.089 +    0.272
-KOSI07+FU+R2       -326.150     714.300 +    0.261    2698.300 - 7.01e-54     740.130 +    0.161
-KOSI07+FU+R3       -325.579     717.157 +   0.0626    2961.157 - 5.85e-111     744.653 -   0.0168
-SCHN05+FU          -334.312     726.623 - 0.000551    2466.623 -  0.00142     750.786 - 0.000783
-SCHN05+FU+G4       -334.142     728.283 -  0.00024    2588.283 - 5.44e-30     753.279 - 0.000225
-SCHN05+FU+R2       -334.018     730.036 - 9.99e-05    2714.036 - 2.68e-57     755.866 - 6.18e-05
-SCHN05+FU+R3       -333.891     733.782 - 1.54e-05    2977.782 - 1.44e-114     761.278 - 4.13e-06
-KOSI07+F1X4+R2     -334.659     737.318 - 2.62e-06    3117.318 - 7.19e-145     765.648 - 4.64e-07
-KOSI07+F1X4+G4     -336.408     738.816 - 1.24e-06    2982.816 - 1.16e-115     766.312 - 3.33e-07
-KOSI07+F1X4+R3     -334.397     740.795 - 4.61e-07    3404.795 - 2.71e-207     770.790 - 3.55e-08
-KOSI07+F1X4        -340.449     744.899 - 5.92e-08    2856.899 - 2.55e-88     771.562 - 2.41e-08
-SCHN05+F1X4+G4     -341.601     749.202 - 6.88e-09    2993.202 - 6.43e-118     776.698 - 1.85e-09
-SCHN05+F1X4+R2     -341.083     750.166 - 4.25e-09    3130.166 - 1.17e-147     778.495 - 7.53e-10
-SCHN05+F1X4+R3     -339.378     750.757 - 3.16e-09    3414.757 - 1.86e-209     780.752 - 2.44e-10
-KOSI07+F3X4+G4     -335.710     749.421 - 6.17e-09    3869.421 - 3.47e-308     781.916 - 1.36e-10
-SCHN05+F1X4        -346.684     757.367 - 1.16e-10    2869.367 -    5e-91     784.030 - 4.73e-11
-KOSI07+F3X4+R2     -335.635     751.270 - 2.45e-09    4031.270 -        0     784.598 - 3.56e-11
-KOSI07+F3X4        -338.943     753.886 - 6.62e-10    3717.886 - 2.79e-275     785.549 - 2.22e-11
-KOSI07+F3X4+R3     -334.755     753.511 - 7.98e-10    4365.511 -        0     788.506 - 5.05e-12
-SCHN05+F3X4+R3     -336.043     756.086 -  2.2e-10    4368.086 -        0     791.081 - 1.39e-12
-SCHN05+F3X4+G4     -340.878     759.755 - 3.52e-11    3879.755 - 1.98e-310     792.250 - 7.76e-13
-SCHN05+F3X4+R2     -341.350     762.701 - 8.06e-12    4042.701 -        0     796.029 - 1.17e-13
-SCHN05+F3X4        -344.364     764.728 - 2.93e-12    3728.728 - 1.23e-277     796.390 -  9.8e-14
-MG+F1X4+R3         -346.794     767.587 - 7.01e-13    3579.587 -   3e-245     798.416 - 3.56e-14
-MGK+F1X4+R3        -346.509     769.018 - 3.43e-13    3733.018 - 1.44e-278     800.680 - 1.15e-14
-MG+F1X4+R2         -351.250     772.499 - 6.01e-14    3292.499 - 6.56e-183     801.662 - 7.02e-15
-MG+F1X4+G4         -352.915     773.830 - 3.09e-14    3153.830 - 8.48e-153     802.159 - 5.48e-15
-MG+F3X4+R2         -343.595     769.190 - 3.14e-13    4213.190 -        0     803.351 - 3.02e-15
-MG+F1X4            -355.133     776.266 - 9.14e-15    3020.266 - 8.54e-124     803.762 - 2.46e-15
-MG+F3X4+R3         -340.988     767.976 - 5.77e-13    4551.976 -        0     803.804 - 2.41e-15
-MGK+F1X4           -354.096     776.192 - 9.48e-15    3156.192 - 2.6e-153     804.522 - 1.68e-15
-MGK+F1X4+G4        -353.260     776.520 - 8.05e-15    3296.520 - 8.78e-184     805.683 -  9.4e-16
-MGK+F3X4+R2        -343.388     770.776 - 1.42e-13    4382.776 -        0     805.771 -    9e-16
-MGK+F3X4+R3        -341.002     770.005 - 2.09e-13    4730.005 -        0     806.666 - 5.75e-16
-MG+F3X4            -349.397     776.795 - 7.02e-15    3896.795 - 3.94e-314     809.290 - 1.55e-16
-MG+F3X4+G4         -348.411     776.823 - 6.92e-15    4056.823 -        0     810.151 - 1.01e-16
-MGK+F1X4+R2        -354.164     780.329 -  1.2e-15    3444.329 - 7.04e-216     810.324 - 9.23e-17
-MGK+F3X4           -349.380     778.760 - 2.63e-15    4058.760 -        0     812.088 - 3.82e-17
-MGK+F3X4+G4        -348.395     778.790 - 2.59e-15    4222.790 -        0     812.952 - 2.48e-17
-GY+F1X4+G4         -357.982     785.965 - 7.16e-17    3305.965 - 7.81e-186     815.127 - 8.36e-18
-GY+F1X4            -360.375     788.750 - 1.78e-17    3168.750 - 4.88e-156     817.080 - 3.15e-18
-GY+F1X4+R2         -358.045     788.091 - 2.47e-17    3452.091 - 1.45e-217     818.086 - 1.91e-18
-GY+F1X4+R3         -357.406     790.813 - 6.34e-18    3754.813 - 2.67e-283     822.475 - 2.12e-19
-GY+F3X4+R3         -350.221     788.442 - 2.07e-17    4748.442 -        0     825.104 -  5.7e-20
-GY+F3X4+R2         -353.503     791.005 - 5.76e-18    4403.005 -        0     826.000 - 3.64e-20
-GY+F3X4+G4         -357.726     797.452 - 2.29e-19    4241.452 -        0     831.614 -  2.2e-21
-GY+F3X4            -362.317     804.634 - 6.32e-21    4084.634 -        0     837.962 -  9.2e-23
+KOSI07+FU          -330.192     718.385 +    0.306    2458.385 +    0.999     742.548 +    0.458
+KOSI07+FU+G4       -328.889     717.779 +    0.414    2577.779 - 1.18e-26     742.775 +    0.408
+KOSI07+FU+R2       -328.918     719.837 +    0.148    2703.837 - 5.02e-54     745.666 +   0.0962
+KOSI07+FU+R3       -327.044     720.089 +    0.131    2964.089 - 1.54e-110     747.585 -   0.0369
+SCHN05+FU          -336.976     731.953 - 0.000346    2471.953 -  0.00113     756.116 - 0.000518
+SCHN05+FU+G4       -336.401     732.802 - 0.000227    2592.802 - 6.47e-30     757.799 - 0.000223
+SCHN05+FU+R2       -335.923     733.845 - 0.000135    2717.845 - 4.55e-57     759.675 - 8.74e-05
+SCHN05+FU+R3       -334.108     734.215 - 0.000112    2978.215 - 1.32e-113     761.711 - 3.16e-05
+KOSI07+F1X4+R2     -340.781     749.562 -  5.2e-08    3129.562 - 1.8e-146     777.891 - 9.68e-09
+KOSI07+F1X4+G4     -342.322     750.644 - 3.03e-08    2994.644 - 3.57e-117     778.140 - 8.55e-09
+KOSI07+F1X4+R3     -339.457     750.914 - 2.64e-08    3414.914 - 1.96e-208     780.910 - 2.14e-09
+KOSI07+F1X4        -347.459     758.919 - 4.83e-10    2870.919 - 2.62e-90     785.582 - 2.07e-10
+SCHN05+F1X4+G4     -346.640     759.279 - 4.03e-10    3003.279 - 4.76e-119     786.775 - 1.14e-10
+SCHN05+F1X4+R2     -345.420     758.841 - 5.02e-10    3138.841 - 1.74e-148     787.170 - 9.35e-11
+MG+F1X4            -347.520     761.040 - 1.67e-10    3005.040 - 1.97e-119     788.536 - 4.72e-11
+SCHN05+F1X4+R3     -343.284     758.568 - 5.76e-10    3422.568 - 4.26e-210     788.564 - 4.66e-11
+MG+F1X4+R2         -344.918     759.836 - 3.05e-10    3279.836 - 4.2e-179     788.998 - 3.75e-11
+MG+F1X4+G4         -346.605     761.210 - 1.54e-10    3141.210 - 5.32e-149     789.540 - 2.86e-11
+MG+F1X4+R3         -342.748     759.496 - 3.62e-10    3571.496 - 1.95e-242     790.325 - 1.93e-11
+MGK+F1X4           -347.491     762.983 - 6.33e-11    3142.983 - 2.19e-149     791.312 - 1.18e-11
+MGK+F1X4+R2        -344.767     761.534 - 1.31e-10    3425.534 - 9.68e-211     791.530 - 1.06e-11
+MGK+F1X4+G4        -346.537     763.074 - 6.05e-11    3283.074 - 8.33e-180     792.236 - 7.43e-12
+MGK+F1X4+R3        -342.619     761.238 - 1.51e-10    3725.238 - 8.05e-276     792.900 - 5.33e-12
+SCHN05+F1X4        -352.459     768.918 - 3.26e-12    2880.918 - 1.77e-92     795.580 -  1.4e-12
+MG+F3X4+R3         -337.119     760.238 -  2.5e-10    4544.238 -        0     796.066 - 1.09e-12
+GY+F1X4+R3         -345.357     766.713 - 9.81e-12    3730.713 - 5.21e-277     798.375 - 3.45e-13
+MGK+F3X4+R3        -337.156     762.313 - 8.85e-11    4722.313 -        0     798.974 - 2.56e-13
+SCHN05+F3X4+R3     -340.058     764.115 - 3.59e-11    4376.115 -        0     799.110 - 2.39e-13
+MG+F3X4            -344.338     766.675 - 9.99e-12    3886.675 - 7.08e-311     799.170 - 2.32e-13
+KOSI07+F3X4+R3     -340.170     764.340 - 3.21e-11    4376.340 -        0     799.335 - 2.13e-13
+MG+F3X4+G4         -343.123     766.246 - 1.24e-11    4046.246 -        0     799.575 - 1.89e-13
+MG+F3X4+R2         -342.145     766.291 - 1.21e-11    4210.291 -        0     800.453 - 1.22e-13
+KOSI07+F3X4+G4     -345.242     768.484 - 4.04e-12    3888.484 - 2.87e-311     800.980 - 9.38e-14
+GY+F1X4+G4         -351.186     772.372 - 5.79e-13    3292.372 - 7.97e-182     801.534 - 7.11e-14
+MG+F3X4+R4         -337.142     764.284 -  3.3e-11    4904.284 -        0     801.778 - 6.29e-14
+MGK+F3X4           -344.305     768.610 -  3.8e-12    4048.610 -        0     801.938 - 5.81e-14
+MGK+F3X4+G4        -343.085     768.170 - 4.73e-12    4212.170 -        0     802.332 - 4.77e-14
+MGK+F3X4+R2        -342.106     768.212 - 4.64e-12    4380.212 -        0     803.207 - 3.08e-14
+KOSI07+F3X4+R2     -345.116     770.233 - 1.69e-12    4050.233 -        0     803.561 - 2.58e-14
+GY+F1X4+R4         -345.356     770.712 - 1.33e-12    4050.712 -        0     804.041 - 2.03e-14
+SCHN05+F3X4+R4     -339.779     767.558 - 6.43e-12    4727.558 -        0     804.219 - 1.86e-14
+GY+F1X4+R2         -351.222     774.444 - 2.06e-13    3438.444 - 1.52e-213     804.439 - 1.66e-14
+MGK+F3X4+R4        -337.175     766.350 - 1.18e-11    5090.350 -        0     804.678 - 1.48e-14
+KOSI07+F3X4+R4     -340.240     768.480 - 4.05e-12    4728.480 -        0     805.141 - 1.17e-14
+GY+F1X4            -354.879     777.758 - 3.92e-14    3157.758 - 1.36e-152     806.087 -  7.3e-15
+KOSI07+F3X4        -349.569     775.137 - 1.45e-13    3739.137 - 7.72e-279     806.799 - 5.11e-15
+GY+F3X4+R3         -342.379     772.758 - 4.77e-13    4732.758 -        0     809.420 - 1.38e-15
+SCHN05+F3X4+G4     -350.147     778.293 -    3e-14    3898.293 - 2.13e-313     810.789 - 6.95e-16
+SCHN05+F3X4        -352.473     780.946 - 7.96e-15    3744.946 - 4.23e-280     812.608 -  2.8e-16
+GY+F3X4+R4         -342.472     776.945 - 5.88e-14    5100.945 -        0     815.273 - 7.39e-17
+SCHN05+F3X4+R2     -351.150     782.299 - 4.05e-15    4062.299 -        0     815.628 - 6.19e-17
+GY+F3X4+G4         -353.135     788.270 - 2.04e-16    4232.270 -        0     822.431 - 2.06e-18
+GY+F3X4+R2         -356.126     796.252 - 3.78e-18    4408.252 -        0     831.247 - 2.51e-20
+GY+F3X4            -359.234     798.469 - 1.25e-18    4078.469 -        0     831.797 - 1.91e-20
 
 AIC, w-AIC   : Akaike information criterion scores and weights.
 AICc, w-AICc : Corrected AIC scores and weights.
@@ -102,19 +108,19 @@ SUBSTITUTION PROCESS
 
 Model of substitution: KOSI07+FU
 
-Nonsynonymous/synonymous ratio (omega): 0.0146
-Transition/transversion ratio (kappa): 1.5115
+Nonsynonymous/synonymous ratio (omega): 0.0082
+Transition/transversion ratio (kappa): 1.3142
 Model of rate heterogeneity: Uniform
 
 MAXIMUM LIKELIHOOD TREE
 -----------------------
 
-Log-likelihood of the tree: -323.5807 (s.e. 28.0961)
+Log-likelihood of the tree: -324.3614 (s.e. 28.5074)
 Unconstrained log-likelihood (without tree): -48.1646
 Number of free parameters (#branches + #model parameters): 29
-Akaike information criterion (AIC) score: 705.1615
-Corrected Akaike information criterion (AICc) score: 2445.1615
-Bayesian information criterion (BIC) score: 729.3247
+Akaike information criterion (AIC) score: 706.7228
+Corrected Akaike information criterion (AICc) score: 2446.7228
+Bayesian information criterion (BIC) score: 730.8859
 
 **************************** WARNING ****************************
 Number of parameters (K, model parameters and branch lengths): 29
@@ -147,10 +153,10 @@ Inference: A Practical Information-Theoretic Approach. Springer,
 New York.
 ************************ END OF WARNING ***********************
 
-Total tree length (sum of branch lengths): 6.6887
-Sum of internal branch lengths: 3.2396 (48.4335% of tree length)
+Total tree length (sum of branch lengths): 6.6175
+Sum of internal branch lengths: 2.7695 (41.8502% of tree length)
 
-WARNING: 2 near-zero internal branches (<0.0588) should be treated with caution
+WARNING: 3 near-zero internal branches (<0.0588) should be treated with caution
          Such branches are denoted by '**' in the figure below
 
 NOTE: Tree is UNROOTED although outgroup taxon 'Austrognathia_christianae_DQ079978' is drawn at root
@@ -163,43 +169,43 @@ Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
 |
 +-------Austrognathia_sp__MVS_2005_DQ079979
 |
-|        +----------Valvognathia_pogonostoma_DQ079990
-|     +--| (78.6/16)
+|           +------------Valvognathia_pogonostoma_DQ079990
+|        +**| (0/25)
+|        |  |                 +-------Gnathostomula_armata_AY218158
+|        |  +-----------------| (89.6/72)
+|        |                    +----Haplognathia_rosea_DQ079984
+|     +--| (80.2/31)
 |     |  +**Haplognathia_gubbarnorum_DQ079983
-|  +--| (69.1/13)
-|  |  |                               +-----------Problognathia_minima_DQ079987
-|  |  |                            +--| (63.7/41)
-|  |  |                            |  |     +**Gnathostomula_mediterranea_DQ079981
-|  |  |                            |  |  +--| (80.6/45)
-|  |  |                            |  |  |  +------------------Rastrognathia_macrostoma_DQ079988
-|  |  |                            |  +--| (41.7/39)
-|  |  |                            |     |      +--Tenuignathia_rikerae_DQ079989
-|  |  |                            |     |   +**| (0/27)
-|  |  |                            |     |   |  +---------Mesognatharia_remanei_DQ079986
-|  |  |                            |     +---| (87.4/65)
-|  |  |                            |         +**Labidognathia_longicollis_AY218157
-|  |  |       +--------------------| (94.5/78)
-|  |  |       |                    +**Gnathostomula_peregrina_DQ079982
-|  |  |  +----| (16.9/32)
-|  |  |  |    +--Haplognathia_simplex_DQ079985
-|  |  +**| (0/29)
-|  |     +------Haplognathia_ruberrima_AY218156
-+--| (53.1/45)
-   |           +**Cosmognathia_arcus_DQ079980
-   +-----------| (67.8/26)
-               |                     +-------------Gnathostomula_armata_AY218158
-               +---------------------| (97.3/77)
-                                     +**Haplognathia_rosea_DQ079984
+|  +**| (0/27)
+|  |  |                                 +----------Problognathia_minima_DQ079987
+|  |  |                              +--| (74.6/31)
+|  |  |                              |  |     +**Gnathostomula_mediterranea_DQ079981
+|  |  |                              |  |  +--| (83.7/42)
+|  |  |                              |  |  |  +----------------Rastrognathia_macrostoma_DQ079988
+|  |  |                              |  +--| (36/27)
+|  |  |                              |     |      +--Tenuignathia_rikerae_DQ079989
+|  |  |                              |     |   +**| (0/25)
+|  |  |                              |     |   |  +---------Mesognatharia_remanei_DQ079986
+|  |  |                              |     +---| (85.7/61)
+|  |  |                              |         +**Labidognathia_longicollis_AY218157
+|  |  |         +--------------------| (91.8/67)
+|  |  |         |                    +**Gnathostomula_peregrina_DQ079982
+|  |  |   +-----| (47.7/30)
+|  |  |   |     +**Haplognathia_simplex_DQ079985
+|  |  +---| (70.3/30)
+|  |      +-----Haplognathia_ruberrima_AY218156
++--| (66.9/49)
+   +----------Cosmognathia_arcus_DQ079980
 
 Tree in newick format:
 
-(Austrognathia_christianae_DQ079978:0.0000024743,Austrognathia_sp__MVS_2005_DQ079979:0.3275849788,(((Valvognathia_pogonostoma_DQ079990:0.4305208371,Haplognathia_gubbarnorum_DQ079983:0.0000023508)78.6/16:0.1309927047,((((Problognathia_minima_DQ079987:0.4915467554,((Gnathostomula_mediterranea_DQ079981:0.0000021029,Rastrognathia_macrostoma_DQ079988:0.7494499692)80.6/45:0.1295884923,((Tenuignathia_rikerae_DQ079989:0.0807797438,Mesognatharia_remanei_DQ079986:0.4173054920)0/27:0.0000020815,Labidognathia_longicollis_AY218157:0.0000010000)87.4/65:0.1902741585)41.7/39:0.0810528467)63.7/41:0.0878888766,Gnathostomula_peregrina_DQ079982:0.0000026001)94.5/78:0.8461250410,Haplognathia_simplex_DQ079985:0.0940443488)16.9/32:0.1980169268,Haplognathia_ruberrima_AY218156:0.2982603421)0/29:0.0455786737)69.1/13:0.1045709629,(Cosmognathia_arcus_DQ079980:0.0000020521,(Gnathostomula_armata_AY218158:0.5595990620,Haplognathia_rosea_DQ079984:0.0000022602)97.3/77:0.8539938802)67.8/26:0.4932379411)53.1/45:0.0782343518);
+(Austrognathia_christianae_DQ079978:0.0000029093,Austrognathia_sp__MVS_2005_DQ079979:0.3233461276,((((Valvognathia_pogonostoma_DQ079990:0.5237559110,(Gnathostomula_armata_AY218158:0.3391516310,Haplognathia_rosea_DQ079984:0.2226555790)89.6/72:0.7510955958)0/25:0.0000021113,Haplognathia_gubbarnorum_DQ079983:0.0000022604)80.2/31:0.1393675337,((((Problognathia_minima_DQ079987:0.4761757411,((Gnathostomula_mediterranea_DQ079981:0.0000028703,Rastrognathia_macrostoma_DQ079988:0.7193191938)83.7/42:0.1286358076,((Tenuignathia_rikerae_DQ079989:0.0795722153,Mesognatharia_remanei_DQ079986:0.4189278871)0/25:0.0000010000,Labidognathia_longicollis_AY218157:0.0000010000)85.7/61:0.1862442203)36/27:0.0726351428)74.6/31:0.0955101560,Gnathostomula_peregrina_DQ079982:0.0000024206)91.8/67:0.8617265081,Haplognathia_simplex_DQ079985:0.0114423368)47.7/30:0.2627057775,Haplognathia_ruberrima_AY218156:0.2563674632)70.3/30:0.1939307056)0/27:0.0000029293,Cosmognathia_arcus_DQ079980:0.4773579658)66.9/49:0.0775992650);
 
 CONSENSUS TREE
 --------------
 
 Consensus tree is constructed from 1000 bootstrap trees
-Log-likelihood of consensus tree: -324.0329712
+Log-likelihood of consensus tree: -325.8333987
 Robinson-Foulds distance between ML tree and consensus tree: 10
 
 Branches with support >0.0000000% are kept (extended consensus)
@@ -208,51 +214,51 @@ Numbers in parentheses are bootstrap supports (%)
 
 +--Austrognathia_christianae_DQ079978
 |
-+--------Austrognathia_sp__MVS_2005_DQ079979
++----Austrognathia_sp__MVS_2005_DQ079979
 |
-|           +-----------Valvognathia_pogonostoma_DQ079990
-|        +--| (30)
-|        |  |                        +--------Gnathostomula_armata_AY218158
-|        |  +------------------------| (77)
-|        |                           +-----Haplognathia_rosea_DQ079984
-|     +--| (39)
-|     |  +--Haplognathia_gubbarnorum_DQ079983
+|           +--------Valvognathia_pogonostoma_DQ079990
+|        +--| (25)
+|        |  +--Haplognathia_gubbarnorum_DQ079983
+|     +--| (7)
+|     |  |                +---Gnathostomula_armata_AY218158
+|     |  |             +--| (72)
+|     |  |             |  +-----Haplognathia_rosea_DQ079984
+|     |  +-------------| (41)
+|     |                |                          +-------Problognathia_minima_DQ079987
+|     |                |                       +--| (31)
+|     |                |                       |  |     +--Gnathostomula_mediterranea_DQ079981
+|     |                |                       |  |  +--| (42)
+|     |                |                       |  |  |  +------------Rastrognathia_macrostoma_DQ079988
+|     |                |                       |  +--| (27)
+|     |                |                       |     |     +--Tenuignathia_rikerae_DQ079989
+|     |                |                       |     |  +--| (49)
+|     |                |                       |     |  |  +--Labidognathia_longicollis_AY218157
+|     |                |                       |     +--| (61)
+|     |                |                       |        +------Mesognatharia_remanei_DQ079986
+|     |                +-----------------------| (67)
+|     |                                        +--Gnathostomula_peregrina_DQ079982
 |  +--| (27)
-|  |  |                               +------------Problognathia_minima_DQ079987
-|  |  |                            +--| (41)
-|  |  |                            |  |     +--Gnathostomula_mediterranea_DQ079981
-|  |  |                            |  |  +--| (45)
-|  |  |                            |  |  |  +--------------------Rastrognathia_macrostoma_DQ079988
-|  |  |                            |  +--| (39)
-|  |  |                            |     |       +--Tenuignathia_rikerae_DQ079989
-|  |  |                            |     |    +--| (44)
-|  |  |                            |     |    |  +--Labidognathia_longicollis_AY218157
-|  |  |                            |     +----| (65)
-|  |  |                            |          +----------Mesognatharia_remanei_DQ079986
-|  |  |  +-------------------------| (78)
-|  |  |  |                         +--Gnathostomula_peregrina_DQ079982
-|  |  +--| (29)
-|  |     |  +------Haplognathia_ruberrima_AY218156
-|  |     +--| (33)
-|  |        +------Haplognathia_simplex_DQ079985
-+--| (45)
-   +------------Cosmognathia_arcus_DQ079980
+|  |  |  +----Haplognathia_ruberrima_AY218156
+|  |  +--| (30)
+|  |     +---Haplognathia_simplex_DQ079985
++--| (49)
+   +-------Cosmognathia_arcus_DQ079980
 
 
 Consensus tree in newick format: 
 
-(Austrognathia_christianae_DQ079978:0.0000029942,Austrognathia_sp__MVS_2005_DQ079979:0.3275847386,((((Valvognathia_pogonostoma_DQ079990:0.4483251848,(Gnathostomula_armata_AY218158:0.3349032241,Haplognathia_rosea_DQ079984:0.2276021524)77:0.8959847492)30:0.0000024781,Haplognathia_gubbarnorum_DQ079983:0.0000028512)39:0.1381409336,(((Problognathia_minima_DQ079987:0.4917980139,((Gnathostomula_mediterranea_DQ079981:0.0000021828,Rastrognathia_macrostoma_DQ079988:0.7494495730)45:0.1293670281,((Tenuignathia_rikerae_DQ079989:0.0807781451,Labidognathia_longicollis_AY218157:0.0000028512)44:0.0000029123,Mesognatharia_remanei_DQ079986:0.4173104596)65:0.1903147631)39:0.0817117566)41:0.0875200003,Gnathostomula_peregrina_DQ079982:0.0000029502)78:0.9383926287,(Haplognathia_ruberrima_AY218156:0.2783539013,Haplognathia_simplex_DQ079985:0.2696148372)33:0.0980948025)29:0.0000020263)27:0.0645614442,Cosmognathia_arcus_DQ079980:0.4930973050)45:0.0814632275);
+(Austrognathia_christianae_DQ079978:0.0000024843,Austrognathia_sp__MVS_2005_DQ079979:0.3233462013,((((Valvognathia_pogonostoma_DQ079990:0.5325465203,Haplognathia_gubbarnorum_DQ079983:0.0000028512)25:0.0000023338,((Gnathostomula_armata_AY218158:0.2174622852,Haplognathia_rosea_DQ079984:0.3313087013)72:0.0000021310,((Problognathia_minima_DQ079987:0.4596599919,((Gnathostomula_mediterranea_DQ079981:0.0000021156,Rastrognathia_macrostoma_DQ079988:0.7193180564)42:0.1293155558,((Tenuignathia_rikerae_DQ079989:0.0783125890,Labidognathia_longicollis_AY218157:0.0000028512)49:0.0000029123,Mesognatharia_remanei_DQ079986:0.4205596990)61:0.1844978353)27:0.0651464687)31:0.0000020555,Gnathostomula_peregrina_DQ079982:0.1069627338)67:1.3275307916)41:0.7833780632)7:0.1333837702,(Haplognathia_ruberrima_AY218156:0.2699919111,Haplognathia_simplex_DQ079985:0.2680847034)30:0.1809074867)27:0.0000020410,Cosmognathia_arcus_DQ079980:0.4739499392)49:0.0758889762);
 
 ALISIM COMMAND
 --------------
-Currently, we only support exporting AliSim commands automatically from the analysis for common models of DNA, Protein, Binary, Multistate, and Morphological data. To simulate data from other models (mixture, lie-markov, etc), please refer to the User Manual of AliSim. Thanks!
+Currently, we only support exporting AliSim commands automatically from the analysis for common models of DNA, Protein, Binary, and Morphological data. To simulate data from other models (mixture, lie-markov, etc), please refer to the User Manual of AliSim. Thanks!
 
 For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
 
 TIME STAMP
 ----------
 
-Date and time: Tue Apr 15 13:00:44 2025
-Total CPU time used: 246.177697 seconds (0h:4m:6s)
-Total wall-clock time used: 162.471727 seconds (0h:2m:42s)
+Date and time: Tue Apr 29 00:31:01 2025
+Total CPU time used: 231.149662 seconds (0h:3m:51s)
+Total wall-clock time used: 149.3047064 seconds (0h:2m:29s)
 

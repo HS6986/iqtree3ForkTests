@@ -1,8 +1,8 @@
-IQ-TREE 3.0.0 built Apr 15 2025
+IQ-TREE 3.0.0 built Apr 28 2025
 
 Input file name: Yamasaki2015.18S28S.RY.Subsampled.fas
 Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
-Random seed number: 575374
+Random seed number: 478837
 
 REFERENCES
 ----------
@@ -41,19 +41,19 @@ Best-fit model according to BIC: JC2+FQ+I
 List of models sorted by BIC scores: 
 
 Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
-JC2+FQ+I           -132.596     381.191 +     0.28    7225.191 +     0.54     492.088 +    0.416
-JC2+FQ+G4          -132.758     381.515 +    0.238    7225.515 +    0.459     492.413 +    0.354
-GTR2+FO+I          -132.581     383.162 +    0.104    7463.162 - 1.14e-52     495.972 +   0.0597
-JC2+FQ+R2          -132.604     383.209 +    0.102    7463.209 - 1.12e-52     496.018 +   0.0583
-GTR2+FO+G4         -132.745     383.491 +   0.0886    7463.491 - 9.69e-53     496.300 +   0.0507
-JC2+FQ+I+G4        -133.039     384.079 +    0.066    7464.079 - 7.22e-53     496.888 -   0.0378
-GTR2+FO+R2         -132.590     385.181 -   0.0381    7705.181 - 3.19e-105     499.902 -  0.00836
-JC2+FQ+I+R2        -132.600     385.201 -   0.0377    7705.201 - 3.16e-105     499.922 -  0.00828
-GTR2+FO+I+G4       -133.027     386.054 -   0.0246    7706.054 - 2.06e-105     500.775 -  0.00541
-GTR2+FO+I+R2       -132.585     387.171 -   0.0141    7951.171 - 1.22e-158     503.804 -  0.00119
-GTR2+FO            -139.678     395.357 - 0.000235    7239.357 - 0.000453     506.254 - 0.000349
-GTR2+FO+R3         -132.655     389.309 -  0.00483    8201.309 - 5.9e-213     507.855 - 0.000157
-GTR2+FO+I+R3       -132.677     391.353 -  0.00174    8455.353 - 4.04e-268     511.811 - 2.17e-05
+JC2+FQ+I           -132.596     381.191 +    0.305    7225.191 +    0.572     492.088 +    0.447
+JC2+FQ+G4          -132.887     381.774 +    0.228    7225.774 +    0.428     492.671 +    0.334
+GTR2+FO+I          -132.593     383.187 +    0.113    7463.187 - 1.19e-52     495.996 +   0.0634
+JC2+FQ+R2          -132.596     383.193 +    0.112    7463.193 - 1.19e-52     496.002 +   0.0632
+GTR2+FO+G4         -132.888     383.777 +   0.0838    7463.777 -  8.9e-53     496.586 -   0.0472
+JC2+FQ+I+G4        -133.665     385.330 -   0.0385    7465.330 - 4.09e-53     498.140 -   0.0217
+GTR2+FO+R2         -132.594     385.187 -   0.0414    7705.187 - 3.37e-105     499.909 -  0.00896
+JC2+FQ+I+R2        -132.596     385.191 -   0.0413    7705.191 - 3.36e-105     499.913 -  0.00895
+GTR2+FO+I+G4       -133.667     387.333 -   0.0142    7707.333 - 1.15e-105     502.055 -  0.00307
+GTR2+FO+I+R2       -132.593     387.186 -   0.0152    7951.186 - 1.29e-158     503.819 -  0.00127
+GTR2+FO            -139.685     395.369 - 0.000255    7239.369 - 0.000477     506.267 - 0.000373
+GTR2+FO+R3         -132.678     389.357 -  0.00515    8201.357 - 6.11e-213     507.902 - 0.000165
+GTR2+FO+I+R3       -132.609     391.217 -  0.00203    8455.217 - 4.58e-268     511.675 -  2.5e-05
 
 AIC, w-AIC   : Akaike information criterion scores and weights.
 AICc, w-AICc : Corrected AIC scores and weights.
@@ -88,7 +88,7 @@ Proportion of invariable sites: 0.6881
 MAXIMUM LIKELIHOOD TREE
 -----------------------
 
-Log-likelihood of the tree: -132.5955 (s.e. 22.9787)
+Log-likelihood of the tree: -132.5955 (s.e. 23.0695)
 Unconstrained log-likelihood (without tree): -87.6301
 Number of free parameters (#branches + #model parameters): 58
 Akaike information criterion (AIC) score: 381.1910
@@ -127,9 +127,9 @@ New York.
 ************************ END OF WARNING ***********************
 
 Total tree length (sum of branch lengths): 0.4778
-Sum of internal branch lengths: 0.2389 (49.9984% of tree length)
+Sum of internal branch lengths: 0.1961 (41.0388% of tree length)
 
-WARNING: 15 near-zero internal branches (<0.0200) should be treated with caution
+WARNING: 16 near-zero internal branches (<0.0200) should be treated with caution
          Such branches are denoted by '**' in the figure below
 
 NOTE: Tree is UNROOTED although outgroup taxon 'Amphiporus_sp.' is drawn at root
@@ -137,74 +137,74 @@ Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
 
 +**Amphiporus_sp.
 |
-+**Anaspides_tasmaniae
+|  +**Anaspides_tasmaniae
++**| (0/4)
+|  |                              +-------------Ascaris_lumbricoides
+|  |                +-------------| (85.6/58)
+|  |                |             |  +**Podura_aquatica
+|  |                |             +**| (0/90)
+|  |                |                +**Sminthurus_viridis
+|  |  +-------------| (84/13)
+|  |  |             |  +**Dilta_littoralis
+|  |  |             +**| (0/21)
+|  |  |                +-------------Merope_tuber
+|  +**| (0/6)
+|     +**Squilla_empusa
 |
-|                              +**Anoplodactylus_portus
-|                           +**| (0/90)
-|                           |  +**Callipallene_sp.
-|                +----------| (84.2/28)
-|                |          |                        +**Trichinella_spiralis
-|                |          +------------------------| (95.2/80)
-|                |                                   +----------Xiphinema_rivesi
-|     +----------| (16.7/22)
-|     |          |  +**Gordius_aquaticus
-|     |          +**| (0/93)
-|     |             +**Homarus_americanus
-|  +**| (0/8)
-|  |  |                   +**Calocheiridius_cf._termitophilus
-|  |  |                +**| (0/36)
-|  |  |                |  +**Cherokia_georgiana
-|  |  |             +**| (0/0)
-|  |  |             |  +------------------------Pycnophyes_sp.
-|  |  |          +**| (0/4)
-|  |  |          |  |  +----------Limulus_polyphemus
-|  |  |          |  +**| (0/6)
-|  |  |          |     |          +**Milnesium_tardigradum
-|  |  |          |     +----------| (49.2/94)
-|  |  |          |                +**Peripatoides_novaezealandiae
-|  |  +----------| (84.6/4)
-|  |             +----------Siro_rubens
-+**| (0/30)
-   |                              +----------Ascaris_lumbricoides
-   |                   +----------| (84.5/49)
-   |                   |          |  +**Podura_aquatica
-   |                   |          +**| (0/88)
-   |                   |             +**Sminthurus_viridis
-   |        +----------| (87.3/44)
-   |        |          +**Rugiloricus_sp.
-   |     +**| (0/1)
-   |     |  +----------Scutigera_coleoptrata
-   |  +**| (0/1)
-   |  |  |                +**Callibaetis_ferrugineus
-   |  |  |             +**| (0/90)
-   |  |  |             |  +**Gomphocerinae_sp.
-   |  |  |  +----------| (86.2/2)
-   |  |  |  |          |                                   +----------Ciona_intestinalis
-   |  |  |  |          |                        +----------| (85.2/34)
-   |  |  |  |          |                        |          +**Cyprididae_sp.
-   |  |  |  |          |             +----------| (84/2)
-   |  |  |  |          |             |          +**Dilta_littoralis
-   |  |  |  |          |  +----------| (87.8/1)
-   |  |  |  |          |  |          +**Merope_tuber
-   |  |  |  |          +**| (0/0)
-   |  |  |  |             |          +**Eremobates_sp.
-   |  |  |  |             +----------| (46.3/86)
-   |  |  |  |                        +**Stylochus_zebra
-   |  |  +**| (0/1)
-   |  |     +----------Triops_longicaudatus
-   +**| (0/0)
-      +**Squilla_empusa
+|                                                +**Anoplodactylus_portus
+|                                             +**| (0/92)
+|                                             |  +**Callipallene_sp.
+|                               +-------------| (49.7/39)
+|                               |             |             +**Gordius_aquaticus
+|                               |             +-------------| (92.2/93)
+|                               |                           +**Homarus_americanus
+|                            +**| (0/7)
+|                            |  |                +**Milnesium_tardigradum
+|                            |  |  +-------------| (91.4/95)
+|                            |  |  |             +**Peripatoides_novaezealandiae
+|                            |  +**| (0/7)
+|                            |     |  +------------------------------Pycnophyes_sp.
+|                            |     +**| (0/24)
+|                            |        |                              +-------------Trichinella_spiralis
+|                            |        +------------------------------| (94.8/86)
+|                            |                                       +**Xiphinema_rivesi
+|                         +**| (0/5)
+|                         |  +**Calocheiridius_cf._termitophilus
+|                      +**| (0/7)
+|                      |  +**Cherokia_georgiana
+|                   +**| (0/3)
+|                   |  |                              +**Callibaetis_ferrugineus
+|                   |  |                +-------------| (92.2/86)
+|                   |  |                |             +**Gomphocerinae_sp.
+|                   |  |  +-------------| (86.8/33)
+|                   |  |  |             |  +**Eremobates_sp.
+|                   |  |  |             +**| (0/92)
+|                   |  |  |                +**Stylochus_zebra
+|                   |  +**| (0/4)
+|                   |     |                           +**Ciona_intestinalis
+|                   |     |             +-------------| (85.4/29)
+|                   |     |             |             +-------------Cyprididae_sp.
+|                   |     +-------------| (85.2/33)
+|                   |                   +**Siro_rubens
+|     +-------------| (86.6/3)
+|     |             +-------------Limulus_polyphemus
+|  +**| (0/2)
+|  |  +-------------Scutigera_coleoptrata
++**| (0/6)
+   |  +-------------Rugiloricus_sp.
+   +**| (0/13)
+      +-------------Triops_longicaudatus
 
 Tree in newick format:
 
-(Amphiporus_sp.:0.0000010015,Anaspides_tasmaniae:0.0000010015,(((((Anoplodactylus_portus:0.0000010015,Callipallene_sp.:0.0000010015)0/90:0.0000010015,(Trichinella_spiralis:0.0000010015,Xiphinema_rivesi:0.0214051835)95.2/80:0.0462233664)84.2/28:0.0214052827,(Gordius_aquaticus:0.0000010015,Homarus_americanus:0.0000010015)0/93:0.0000010015)16.7/22:0.0214054064,((((Calocheiridius_cf._termitophilus:0.0000010015,Cherokia_georgiana:0.0000010015)0/36:0.0000010015,Pycnophyes_sp.:0.0462227182)0/0:0.0000010015,(Limulus_polyphemus:0.0214050914,(Milnesium_tardigradum:0.0000010015,Peripatoides_novaezealandiae:0.0000010015)49.2/94:0.0214050536)0/6:0.0000010015)0/4:0.0000010015,Siro_rubens:0.0214051941)84.6/4:0.0214052362)0/8:0.0000010015,(((((Ascaris_lumbricoides:0.0214054406,(Podura_aquatica:0.0000010015,Sminthurus_viridis:0.0000010015)0/88:0.0000010015)84.5/49:0.0214054844,Rugiloricus_sp.:0.0000010015)87.3/44:0.0214055245,Scutigera_coleoptrata:0.0214055595)0/1:0.0000010015,(((Callibaetis_ferrugineus:0.0000010015,Gomphocerinae_sp.:0.0000010015)0/90:0.0000010015,((((Ciona_intestinalis:0.0214057977,Cyprididae_sp.:0.0000010015)85.2/34:0.0214057767,Dilta_littoralis:0.0000010015)84/2:0.0214057508,Merope_tuber:0.0000010015)87.8/1:0.0214057301,(Eremobates_sp.:0.0000010015,Stylochus_zebra:0.0000010015)46.3/86:0.0214056846)0/0:0.0000010015)86.2/2:0.0214056450,Triops_longicaudatus:0.0214055994)0/1:0.0000010015)0/1:0.0000010015,Squilla_empusa:0.0000010015)0/0:0.0000010015)0/30:0.0000010015);
+(Amphiporus_sp.:0.0000010000,(Anaspides_tasmaniae:0.0000010000,(((Ascaris_lumbricoides:0.0214047247,(Podura_aquatica:0.0000010000,Sminthurus_viridis:0.0000010000)0/90:0.0000010000)85.6/58:0.0214047616,(Dilta_littoralis:0.0000010000,Merope_tuber:0.0214047781)0/21:0.0000010000)84/13:0.0214048081,Squilla_empusa:0.0000010000)0/6:0.0000010000)0/4:0.0000010000,(((((((((Anoplodactylus_portus:0.0000010000,Callipallene_sp.:0.0000010000)0/92:0.0000010000,(Gordius_aquaticus:0.0000010000,Homarus_americanus:0.0000010000)92.2/93:0.0214052477)49.7/39:0.0214050860,((Milnesium_tardigradum:0.0000010000,Peripatoides_novaezealandiae:0.0000010000)91.4/95:0.0214049143,(Pycnophyes_sp.:0.0462224311,(Trichinella_spiralis:0.0214039502,Xiphinema_rivesi:0.0000010000)94.8/86:0.0462225063)0/24:0.0000010000)0/7:0.0000010000)0/7:0.0000010000,Calocheiridius_cf._termitophilus:0.0000010000)0/5:0.0000010000,Cherokia_georgiana:0.0000010000)0/7:0.0000010000,(((Callibaetis_ferrugineus:0.0000010000,Gomphocerinae_sp.:0.0000010000)92.2/86:0.0214055681,(Eremobates_sp.:0.0000010000,Stylochus_zebra:0.0000010000)0/92:0.0000010000)86.8/33:0.0214054146,((Ciona_intestinalis:0.0000010000,Cyprididae_sp.:0.0214049257)85.4/29:0.0214058754,Siro_rubens:0.0000010000)85.2/33:0.0214057305)0/4:0.0000010000)0/3:0.0000010000,Limulus_polyphemus:0.0214049093)86.6/3:0.0214048960,Scutigera_coleoptrata:0.0214048705)0/2:0.0000010000,(Rugiloricus_sp.:0.0214048493,Triops_longicaudatus:0.0214048267)0/13:0.0000010000)0/6:0.0000010000);
 
 CONSENSUS TREE
 --------------
 
 Consensus tree is constructed from 1000 bootstrap trees
-Log-likelihood of consensus tree: -137.5432105
-Robinson-Foulds distance between ML tree and consensus tree: 26
+Log-likelihood of consensus tree: -132.5979130
+Robinson-Foulds distance between ML tree and consensus tree: 27
 
 Branches with support >0.0000000% are kept (extended consensus)
 Branch lengths are optimized by maximum likelihood on original alignment
@@ -214,112 +214,112 @@ Numbers in parentheses are bootstrap supports (%)
 |
 |                       +--Anaspides_tasmaniae
 |                    +--|
-|                    |  |                                           +**Anoplodactylus_portus
-|                    |  |                                        +--|
-|                    |  |                                        |  +**Polyxenidae_sp.
-|                    |  |                           +------------| (90)
-|                    |  |                           |            +--Callipallene_sp.
-|                    |  |              +------------| (38)
-|                    |  |              |            |     +**Gordius_aquaticus
-|                    |  |              |            |  +--|
-|                    |  |              |            |  |  +**Panulirus_argus
-|                    |  |              |            +--| (93)
-|                    |  |              |               +--Homarus_americanus
-|                    |  |           +--| (22)
-|                    |  |           |  |                                             +------------Trichinella_spiralis
-|                    |  |           |  +---------------------------------------------| (80)
-|                    |  |           |                                                +--Xiphinema_rivesi
-|                    |  |        +--| (2)
-|                    |  |        |  |                              +**Calocheiridius_cf._termitophilus
-|                    |  |        |  |                           +**|
-|                    |  |        |  |                           |  +**Mastigoproctus_giganteus
-|                    |  |        |  |                        +**|
-|                    |  |        |  |                        |  +**Placopecten_magellanicus
-|                    |  |        |  |                     +**|
-|                    |  |        |  |                     |  +**Mecaphesa_asperata
-|                    |  |        |  |                  +**|
-|                    |  |        |  |                  |  +**Urechis_caupo
-|                    |  |        |  |               +**|
-|                    |  |        |  |               |  +**Craterostigmus_tasmanianus
-|                    |  |        |  |            +--|
-|                    |  |        |  |            |  +**Orthoporus_sp.
-|                    |  |        |  +------------| (36)
-|                    |  |        |               +--Cherokia_georgiana
-|                    |  |     +--| (1)
-|                    |  |     |  |                  +--Ciona_intestinalis
-|                    |  |     |  |               +--| (34)
-|                    |  |     |  |               |  +------------Cyprididae_sp.
-|                    |  |     |  |  +------------| (34)
-|                    |  |     |  |  |            +------------Siro_rubens
-|                    |  |     |  +--| (10)
-|                    |  |     |     |                         +--Milnesium_tardigradum
-|                    |  |     |     |            +------------| (94)
-|                    |  |     |     |            |            +--Peripatoides_novaezealandiae
-|                    |  |     |     +------------| (37)
-|                    |  |     |                  +--Scutigera_coleoptrata
+|                    |  |                                          +**Anoplodactylus_portus
+|                    |  |                                       +--|
+|                    |  |                                       |  +**Polyxenidae_sp.
+|                    |  |                                    +--| (92)
+|                    |  |                                    |  +--Callipallene_sp.
+|                    |  |                      +-------------| (39)
+|                    |  |                      |             |                +**Gordius_aquaticus
+|                    |  |                      |             |             +--|
+|                    |  |                      |             |             |  +**Panulirus_argus
+|                    |  |                      |             +-------------| (93)
+|                    |  |                      |                           +--Homarus_americanus
+|                    |  |                   +--| (3)
+|                    |  |                   |  |  +------------------------------Pycnophyes_sp.
+|                    |  |                   |  +--| (24)
+|                    |  |                   |     |                              +-------------Trichinella_spiralis
+|                    |  |                   |     +------------------------------| (86)
+|                    |  |                   |                                    +--Xiphinema_rivesi
+|                    |  |     +-------------| (1)
+|                    |  |     |             |                       +**Calocheiridius_cf._termitophilus
+|                    |  |     |             |                    +**|
+|                    |  |     |             |                    |  +**Placopecten_magellanicus
+|                    |  |     |             |                 +**|
+|                    |  |     |             |                 |  +**Mecaphesa_asperata
+|                    |  |     |             |              +**|
+|                    |  |     |             |              |  +**Craterostigmus_tasmanianus
+|                    |  |     |             |           +**|
+|                    |  |     |             |           |  +**Mastigoproctus_giganteus
+|                    |  |     |             |        +**|
+|                    |  |     |             |        |  +**Urechis_caupo
+|                    |  |     |             |     +--|
+|                    |  |     |             |     |  +**Orthoporus_sp.
+|                    |  |     |             |  +--| (36)
+|                    |  |     |             |  |  +--Cherokia_georgiana
+|                    |  |     |             +--| (1)
+|                    |  |     |             |  +-------------Limulus_polyphemus
+|                    |  |     |             |
+|                    |  |     |             |                +--Milnesium_tardigradum
+|                    |  |     |             |             +--| (95)
+|                    |  |     |             |             |  +--Peripatoides_novaezealandiae
+|                    |  |     |             +-------------| (31)
+|                    |  |     |                           +-------------Scutigera_coleoptrata
 |                    |  |  +--| (9)
-|                    |  |  |  |                            +------------Ascaris_lumbricoides
-|                    |  |  |  |               +------------| (49)
-|                    |  |  |  |               |            |  +--Podura_aquatica
-|                    |  |  |  |               |            +--| (88)
-|                    |  |  |  |               |               +--Sminthurus_viridis
-|                    |  |  |  |  +------------| (44)
-|                    |  |  |  |  |            +--Rugiloricus_sp.
-|                    |  |  |  +--| (8)
-|                    |  |  |  |  +------------Dilta_littoralis
+|                    |  |  |  |                              +-------------Ascaris_lumbricoides
+|                    |  |  |  |                +-------------| (58)
+|                    |  |  |  |                |             |  +--Podura_aquatica
+|                    |  |  |  |                |             +--| (90)
+|                    |  |  |  |                |                +--Sminthurus_viridis
+|                    |  |  |  |  +-------------| (35)
+|                    |  |  |  |  |             +--Rugiloricus_sp.
+|                    |  |  |  +--| (9)
+|                    |  |  |  |  +-------------Triops_longicaudatus
 |                    |  |  |  |
-|                    |  |  |  |                              +**Callibaetis_ferrugineus
-|                    |  |  |  |                           +**|
-|                    |  |  |  |                           |  +**Mantis_religiosa
-|                    |  |  |  |                        +**|
-|                    |  |  |  |                        |  +**Zootermopsis_angusticollis
-|                    |  |  |  |                     +--|
-|                    |  |  |  |                     |  +**Gromphadorhina_laevigata
-|                    |  |  |  |                  +--| (90)
-|                    |  |  |  |                  |  +--Gomphocerinae_sp.
-|                    |  |  |  |               +--| (36)
-|                    |  |  |  |               |  +------------Merope_tuber
-|                    |  |  |  |  +------------| (28)
-|                    |  |  |  |  |            |               +**Eremobates_sp.
-|                    |  |  |  |  |            |            +--|
-|                    |  |  |  |  |            |            |  +**Vespula_pensylvanica
-|                    |  |  |  |  |            +------------| (86)
-|                    |  |  |  |  |                         +--Stylochus_zebra
-|                    |  |  |  +--| (4)
-|                    |  |  |  |  +------------Triops_longicaudatus
+|                    |  |  |  |                               +**Callibaetis_ferrugineus
+|                    |  |  |  |                            +**|
+|                    |  |  |  |                            |  +**Gromphadorhina_laevigata
+|                    |  |  |  |                         +**|
+|                    |  |  |  |                         |  +**Mantis_religiosa
+|                    |  |  |  |                      +--|
+|                    |  |  |  |                      |  +**Zootermopsis_angusticollis
+|                    |  |  |  |                   +--| (86)
+|                    |  |  |  |                   |  +--Gomphocerinae_sp.
+|                    |  |  |  |                +--| (33)
+|                    |  |  |  |                |  |                +**Eremobates_sp.
+|                    |  |  |  |                |  |             +--|
+|                    |  |  |  |                |  |             |  +**Vespula_pensylvanica
+|                    |  |  |  |                |  +-------------| (92)
+|                    |  |  |  |                |                +--Stylochus_zebra
+|                    |  |  |  |  +-------------| (31)
+|                    |  |  |  |  |             +-------------Merope_tuber
+|                    |  |  |  +--| (7)
+|                    |  |  |  |  |                +--Ciona_intestinalis
+|                    |  |  |  |  |             +--| (40)
+|                    |  |  |  |  |             |  +-------------Siro_rubens
+|                    |  |  |  |  +-------------| (33)
+|                    |  |  |  |                +-------------Cyprididae_sp.
 |                    |  |  |  |
-|                    |  |  |  |             +-------------Limulus_polyphemus
-|                    |  |  |  +-------------| (11)
-|                    |  |  |                +-------------------------------Pycnophyes_sp.
-|                    |  +--| (30)
+|                    |  |  |  +-------------Dilta_littoralis
+|                    |  +--| (26)
 |                    |     +--Squilla_empusa
 |                 +**|
-|                 |  +**Chordodes_morgani
+|                 |  +**Ptychodera_flava
 |              +**|
-|              |  +**Heteromysis_sp.
+|              |  +**Pandinus_imperator
 |           +**|
-|           |  +**Halicryptus_spinulosus
+|           |  +**Priapulus_caudatus
 |        +**|
-|        |  +**Pandinus_imperator
+|        |  +**Eulimnadia_texana
 |     +**|
-|     |  +**Ptychodera_flava
+|     |  +**Gaetice_depressus
 |  +**|
-|  |  +**Eulimnadia_texana
+|  |  +**Heteromysis_sp.
 +**|
-|  +**Priapulus_caudatus
+|  +**Chordodes_morgani
 |
-+**Gaetice_depressus
++**Halicryptus_spinulosus
 
 
 Consensus tree in newick format: 
 
-(Amphiporus_sp.:0.0000000000,((((((((Anaspides_tasmaniae:0.0000025259,((((((((Anoplodactylus_portus:0.0000000000,Polyxenidae_sp.:0.0000000000):0.0000027339,Callipallene_sp.:0.0000027301)90:0.0226346172,((Gordius_aquaticus:0.0000000000,Panulirus_argus:0.0000000000):0.0000025259,Homarus_americanus:0.0000025259)93:0.0000022580)38:0.0226294133,(Trichinella_spiralis:0.0226135220,Xiphinema_rivesi:0.0000025889)80:0.0809706414)22:0.0000026029,(((((((Calocheiridius_cf._termitophilus:0.0000000000,Mastigoproctus_giganteus:0.0000000000):0.0000000000,Placopecten_magellanicus:0.0000000000):0.0000000000,Mecaphesa_asperata:0.0000000000):0.0000000000,Urechis_caupo:0.0000000000):0.0000000000,Craterostigmus_tasmanianus:0.0000000000):0.0000000000,Orthoporus_sp.:0.0000000000):0.0000025259,Cherokia_georgiana:0.0000025259)36:0.0226103300)2:0.0000021267,(((Ciona_intestinalis:0.0000025259,Cyprididae_sp.:0.0225982432)34:0.0000025259,Siro_rubens:0.0226004521)34:0.0226028371,((Milnesium_tardigradum:0.0000027346,Peripatoides_novaezealandiae:0.0000027331)94:0.0226053504,Scutigera_coleoptrata:0.0000020736)37:0.0226080763)10:0.0000025259)1:0.0000020623,(((Ascaris_lumbricoides:0.0225898501,(Podura_aquatica:0.0000025259,Sminthurus_viridis:0.0000025259)88:0.0000025259)49:0.0225904704,Rugiloricus_sp.:0.0000026643)44:0.0225911233,Dilta_littoralis:0.0225918129)8:0.0000022295,(((((((Callibaetis_ferrugineus:0.0000000000,Mantis_religiosa:0.0000000000):0.0000000000,Zootermopsis_angusticollis:0.0000000000):0.0000000000,Gromphadorhina_laevigata:0.0000000000):0.0000026771,Gomphocerinae_sp.:0.0000025908)90:0.0000025259,Merope_tuber:0.0225925752)36:0.0000025259,((Eremobates_sp.:0.0000000000,Vespula_pensylvanica:0.0000000000):0.0000025259,Stylochus_zebra:0.0000025259)86:0.0225933787)28:0.0225942702,Triops_longicaudatus:0.0225952114)4:0.0000025316,(Limulus_polyphemus:0.0245280514,Pycnophyes_sp.:0.0563686027)11:0.0244513945)9:0.0000025259,Squilla_empusa:0.0000025259)30:0.0000025259):0.0000025259,Chordodes_morgani:0.0000000000):0.0000000000,Heteromysis_sp.:0.0000000000):0.0000000000,Halicryptus_spinulosus:0.0000000000):0.0000000000,Pandinus_imperator:0.0000000000):0.0000000000,Ptychodera_flava:0.0000000000):0.0000000000,Eulimnadia_texana:0.0000000000):0.0000000000,Priapulus_caudatus:0.0000000000):0.0000000000,Gaetice_depressus:0.0000000000);
+(Amphiporus_sp.:0.0000000000,((((((((Anaspides_tasmaniae:0.0000025259,(((((((Anoplodactylus_portus:0.0000000000,Polyxenidae_sp.:0.0000000000):0.0000025259,Callipallene_sp.:0.0000025259)92:0.0000029805,((Gordius_aquaticus:0.0000000000,Panulirus_argus:0.0000000000):0.0000027273,Homarus_americanus:0.0000027183)93:0.0214137126)39:0.0214144319,(Pycnophyes_sp.:0.0462398918,(Trichinella_spiralis:0.0214105384,Xiphinema_rivesi:0.0000025259)86:0.0462375325)24:0.0000029323)3:0.0000024618,((((((((Calocheiridius_cf._termitophilus:0.0000000000,Placopecten_magellanicus:0.0000000000):0.0000000000,Mecaphesa_asperata:0.0000000000):0.0000000000,Craterostigmus_tasmanianus:0.0000000000):0.0000000000,Mastigoproctus_giganteus:0.0000000000):0.0000000000,Urechis_caupo:0.0000000000):0.0000000000,Orthoporus_sp.:0.0000000000):0.0000027260,Cherokia_georgiana:0.0000027087)36:0.0000025259,Limulus_polyphemus:0.0214152080)1:0.0000025259,((Milnesium_tardigradum:0.0000025259,Peripatoides_novaezealandiae:0.0000025259)95:0.0000020103,Scutigera_coleoptrata:0.0214159932)31:0.0214169216)1:0.0214179951,(((Ascaris_lumbricoides:0.0214091563,(Podura_aquatica:0.0000025259,Sminthurus_viridis:0.0000025259)90:0.0000025259)58:0.0214095168,Rugiloricus_sp.:0.0000026623)35:0.0214098976,Triops_longicaudatus:0.0214103001)9:0.0000025259,(((((((Callibaetis_ferrugineus:0.0000000000,Gromphadorhina_laevigata:0.0000000000):0.0000000000,Mantis_religiosa:0.0000000000):0.0000000000,Zootermopsis_angusticollis:0.0000000000):0.0000025259,Gomphocerinae_sp.:0.0000025259)86:0.0000025259,((Eremobates_sp.:0.0000000000,Vespula_pensylvanica:0.0000000000):0.0000027327,Stylochus_zebra:0.0000027346)92:0.0214314330)33:0.0000025259,Merope_tuber:0.0214290882)31:0.0214269163,((Ciona_intestinalis:0.0000025259,Siro_rubens:0.0214206356)40:0.0000025259,Cyprididae_sp.:0.0214221931)33:0.0214249013)7:0.0000024145,Dilta_littoralis:0.0214192305)9:0.0000025259,Squilla_empusa:0.0000025259)26:0.0000025259):0.0000025259,Ptychodera_flava:0.0000000000):0.0000000000,Pandinus_imperator:0.0000000000):0.0000000000,Priapulus_caudatus:0.0000000000):0.0000000000,Eulimnadia_texana:0.0000000000):0.0000000000,Gaetice_depressus:0.0000000000):0.0000000000,Heteromysis_sp.:0.0000000000):0.0000000000,Chordodes_morgani:0.0000000000):0.0000000000,Halicryptus_spinulosus:0.0000000000);
 
 ALISIM COMMAND
 --------------
 To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
 
---alisim simulated_MSA -t Yamasaki2015.18S28S.RY.Subsampled.fas.treefile -m "JC2+FQ+I{0.68809}" --length 50
+--alisim simulated_MSA -t Yamasaki2015.18S28S.RY.Subsampled.fas.treefile -m "JC2+FQ+I{0.688098}" --length 50
 
 To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
 
@@ -334,7 +334,7 @@ For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
 TIME STAMP
 ----------
 
-Date and time: Tue Apr 15 13:03:42 2025
-Total CPU time used: 69.582789 seconds (0h:1m:9s)
-Total wall-clock time used: 41.30464709 seconds (0h:0m:41s)
+Date and time: Tue Apr 29 00:34:51 2025
+Total CPU time used: 30.786511 seconds (0h:0m:30s)
+Total wall-clock time used: 30.04147425 seconds (0h:0m:30s)
 
