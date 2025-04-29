@@ -1,22 +1,22 @@
-IQ-TREE version 3.0.0 for Linux x86 64-bit built Apr 28 2025
+IQ-TREE version 3.0.0 for Linux x86 64-bit built Apr 29 2025
 Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
 Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
 Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
 
 Host:    Hiroaki (AVX2, FMA3, 15 GB RAM)
-Command: ../../iqtree3ForkBuild/build/iqtree3 -s Khalturin2022.WoGaps.recSR4.Subsampled.fasta -m MIX+MFP -mrate-twice 1 -B 1000 -bnni -alrt 1000 -T AUTO --prefix Multistate
-Seed:    870824 (Using SPRNG - Scalable Parallel Random Number Generator)
-Time:    Tue Apr 29 00:05:13 2025
+Command: ../../iqtree3ForkBuild/build/iqtree3 -s Khalturin2022.WoGaps.recSR4.Subsampled50.fasta -m MIX+MFP -mrate-twice 1 -B 1000 -bnni -alrt 1000 -T AUTO --prefix Multistate50 --redo
+Seed:    716275 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Apr 29 16:23:14 2025
 Kernel:  AVX+FMA - auto-detect threads (8 CPU cores detected)
 
-Reading alignment file Khalturin2022.WoGaps.recSR4.Subsampled.fasta ... Fasta format detected
-Reading fasta file: done in 0.000462259 secs
+Reading alignment file Khalturin2022.WoGaps.recSR4.Subsampled50.fasta ... Fasta format detected
+Reading fasta file: done in 0.000832471 secs using 12.01% CPU
 Alignment most likely contains 4-state morphological data
-Constructing alignment: done in 6.378e-05 secs
+Constructing alignment: done in 5.8448e-05 secs using 100.9% CPU
 Alignment has 30 sequences with 50 columns, 43 distinct patterns
 31 parsimony-informative, 9 singleton sites, 10 constant sites
      Gap/Ambiguity  Composition  p-value
-Analyzing sequences: done in 1.3216e-05 secs using 90.8% CPU
+Analyzing sequences: done in 1.167e-05 secs using 94.26% CPU
    1  sym    0.00%    passed     95.30%
    2  cte    0.00%    passed     82.71%
    3  ne2    0.00%    passed     98.57%
@@ -49,7 +49,7 @@ Analyzing sequences: done in 1.3216e-05 secs using 90.8% CPU
   30  pho    0.00%    passed     98.05%
 ****  TOTAL    0.00%  0 sequences failed composition chi2 test (p-value<5%; df=3)
 NOTE: lun is identical to lan but kept for subsequent analysis
-Checking for duplicate sequences: done in 0.000465515 secs using 74.33% CPU
+Checking for duplicate sequences: done in 0.00155018 secs
 --------------------------------------------------------------------
 |                Optimizing Q-mixture model                        |
 --------------------------------------------------------------------
