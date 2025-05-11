@@ -1,22 +1,22 @@
-IQ-TREE version 3.0.0 for Linux x86 64-bit built Apr 29 2025
+IQ-TREE version 3.0.1 for Linux x86 64-bit built May 11 2025
 Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
 Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
 Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
 
 Host:    Hiroaki (AVX2, FMA3, 15 GB RAM)
 Command: ../../iqtree3ForkBuild/build/iqtree3 -s Khalturin2022.WoGaps.recSR4.Subsampled50.fasta -m MIX+MFP -mrate-twice 1 -mset MK -mfreq FQ -B 1000 -bnni -alrt 1000 -T AUTO --prefix Multistate50MKFQ --redo
-Seed:    452833 (Using SPRNG - Scalable Parallel Random Number Generator)
-Time:    Tue Apr 29 16:23:27 2025
+Seed:    100079 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun May 11 23:42:46 2025
 Kernel:  AVX+FMA - auto-detect threads (8 CPU cores detected)
 
 Reading alignment file Khalturin2022.WoGaps.recSR4.Subsampled50.fasta ... Fasta format detected
-Reading fasta file: done in 0.000464157 secs
+Reading fasta file: done in 0.000597448 secs
 Alignment most likely contains 4-state morphological data
-Constructing alignment: done in 7.8009e-05 secs
+Constructing alignment: done in 6.231e-05 secs using 94.69% CPU
 Alignment has 30 sequences with 50 columns, 43 distinct patterns
 31 parsimony-informative, 9 singleton sites, 10 constant sites
      Gap/Ambiguity  Composition  p-value
-Analyzing sequences: done in 1.8126e-05 secs
+Analyzing sequences: done in 0.00263257 secs using 198.7% CPU
    1  sym    0.00%    passed     95.30%
    2  cte    0.00%    passed     82.71%
    3  ne2    0.00%    passed     98.57%
@@ -49,8 +49,8 @@ Analyzing sequences: done in 1.8126e-05 secs
   30  pho    0.00%    passed     98.05%
 ****  TOTAL    0.00%  0 sequences failed composition chi2 test (p-value<5%; df=3)
 NOTE: lun is identical to lan but kept for subsequent analysis
-Checking for duplicate sequences: done in 0.000469282 secs using 252.5% CPU
+Checking for duplicate sequences: done in 0.00196614 secs using 428.8% CPU
 --------------------------------------------------------------------
-|                Optimizing Q-mixture model                        |
+|                Running MixtureFinder                             |
 --------------------------------------------------------------------
 ERROR: Error! Running MixtureFinder only with the MK model and the FQ frequency is completely meaningless. Please provide additional models and/or frequencies, such as GTRX, +F, and +FO, using -mset and/or -mfreq, if you really want to use MixtureFinder for your multistate data.
